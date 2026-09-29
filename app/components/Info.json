@@ -1,0 +1,124 @@
+{
+  "basics": {
+    "name": "Kumar Aarav",
+    "label": "Software Engineer | Backend Developer",
+    "email": "work.kumaraarav@gmail.com",
+    "phone": "+91 7634069202",
+    "location": {
+      "city": "Gaya",
+      "region": "Bihar",
+      "country": "India"
+    },
+    "profiles": {
+      "linkedin": "https://www.linkedin.com/in/kumaraarav/",
+      "github": "https://github.com/git-kumaraarav",
+      "leetcode": "https://leetcode.com/leet-kumaraarav",
+      "takeuforward": "https://takeuforward.org/profile/darkice",
+      "x": "https://twitter.com/kumaraaravX"
+    },
+    "headline": "Fascinated with Linux and Open Source Softwares | CS50x | CS50w"
+  },
+  "about": "Software Engineer specializing in backend architecture, RESTful API design, and AI integrations. Experienced in optimizing data pipelines, building scalable web systems, and deploying machine learning models across edge devices.",
+  "work": [
+    {
+      "company": "ExpertMinds Technologies LLP",
+      "position": "Edge AI / Backend Intern",
+      "location": "Bilaspur, India (On-site)",
+      "startDate": "2025-12",
+      "endDate": "2026-05",
+      "description": [
+        "Evaluated and validated cutting-edge research papers by engineering simulation testbeds utilizing TensorFlow, PyTorch, Flower AI, and MATLAB.",
+        "Spearheaded testing workflows for FedCO, an optimization project involving distributed Federated Learning and edge Computational Offloading mechanisms.",
+        "Leveraged Advanced GenAI prompting models and structural analytical techniques to compress discovery lifecycles for edge UAV surveillance configurations."
+      ]
+    },
+    {
+      "company": "Whatbytes",
+      "position": "Backend Development Intern",
+      "location": "Remote",
+      "startDate": "2025-05",
+      "endDate": "2025-10",
+      "description": [
+        "Architected, debugged, and optimized clean, highly performant production RESTful API workflows utilizing Python, Django, and Django REST Framework.",
+        "Engineered resilient, multi-threaded site scrapers and complex data pipelines using Playwright, Selenium, BeautifulSoup, and scheduled task management via Celery-Beats.",
+        "Drove web scraper target data success rate up to 90% reliability by implementing custom network request interception models, defeating anti-bot blocks."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Guru Ghasidas Vishwavidyalaya (A Central University)",
+      "area": "Information Technology",
+      "studyType": "Bachelor of Technology (B.Tech.)",
+      "location": "Bilaspur, C.G., India",
+      "startDate": "2022-12",
+      "endDate": "2026-05",
+      "score": "7.4 CGPA"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Blood Network",
+      "oneliner": "Full-Stack Healthcare Platform",
+      "technologies": ["Django", "Bootstrap", "PostgreSQL", "Render"],
+      "description": [
+        "Designed a robust transactional database schema mapping interactions between registered blood donors, recipients, and local hospital storage units.",
+        "Built localized tracking state machines and real-time backend verification signals, decreasing emergency health centre response time windows."
+      ]
+    },
+    {
+      "name": "Bachelors Store",
+      "oneliner": "Targeted E-Commerce Platform",
+      "technologies": ["Python", "Django", "Django REST Framework", "Web API"],
+      "description": [
+        "Developed a scalable specialized backend architecture for a digital marketplace, delivering seamless product catalogue parsing and stateful cart persistence."
+      ]
+    },
+    {
+      "name": "Project FightFake",
+      "oneliner": "Machine Learning News Validator",
+      "technologies": ["Flask", "Gemini API", "JavaScript Extension", "NLP"],
+      "description": [
+        "Engineered decoupled, modular backend web services pairing fine-tuned text processing inputs alongside the Gemini API to compute instant credibility indexing."
+      ]
+    },
+    {
+      "name": "VaporMedia & Instarobo",
+      "oneliner": "Automated AI Tools",
+      "technologies": ["Python", "GenAI", "Web Scraping"],
+      "description": [
+        "Co-developed core logic for an automated live GenAI news analyst and an automated messaging workflow platform for custom creator outreach."
+      ]
+    },
+    {
+      "name": "Glance",
+      "oneliner": "Productivity Chrome Extension",
+      "technologies": ["JavaScript", "Chrome Extensions API"],
+      "description": [
+        "Created a custom browser extension for managing daily tasks, tracking weather updates, and displaying motivational quotes directly in the browser."
+      ]
+    }
+  ],
+  "skills": {
+    "programmingLanguages": ["Python", "JavaScript", "C++", "Bash", "Java"],
+    "backendFrameworks": ["Django", "Django REST Framework", "Next.js", "Node.js", "Microservices", "LangChain", "LangGraph"],
+    "databases": ["PostgreSQL", "MySQL", "MongoDB"],
+    "devopsAndTools": ["Docker", "Git", "Linux (Fedora, Arch, Debian, CachyOS, Nobara, Pop!_OS)", "CI/CD", "GitHub Actions", "AWS Basics"],
+    "coreCS": ["DBMS", "Data Structure and Algorithms", "Operating System", "Networking (TCP/IP, HTTP/HTTPS)", "MVC Architecture"]
+  },
+
+  "certifications": [
+    {
+      "title": "CS50x: Introduction to Computer Science & Web Programming",
+      "issuer": "Harvard University"
+    },
+    {
+      "title": "Data Science & Core ML: Introduction & Intermediate Machine Learning",
+      "issuer": "Kaggle"
+    },
+    {
+      "title": "Develop GenAI Apps with Gemini and Streamlit",
+      "issuer": "Google Cloud"
+    }
+  ]
+}
