@@ -61,6 +61,7 @@
       "name": "Blood Network",
       "oneliner": "Full-Stack Healthcare Platform",
       "technologies": ["Django", "Bootstrap", "PostgreSQL", "Render"],
+      "video": "_qzU0mb7Ubw",
       "description": [
         "Designed a robust transactional database schema mapping interactions between registered blood donors, recipients, and local hospital storage units.",
         "Built localized tracking state machines and real-time backend verification signals, decreasing emergency health centre response time windows."
@@ -70,6 +71,7 @@
       "name": "Bachelors Store",
       "oneliner": "Targeted E-Commerce Platform",
       "technologies": ["Python", "Django", "Django REST Framework", "Web API"],
+      "video": "0zFfcEr1e9U",
       "description": [
         "Developed a scalable specialized backend architecture for a digital marketplace, delivering seamless product catalogue parsing and stateful cart persistence."
       ]
@@ -78,6 +80,7 @@
       "name": "Project FightFake",
       "oneliner": "Machine Learning News Validator",
       "technologies": ["Flask", "Gemini API", "JavaScript Extension", "NLP"],
+      "video": "BHPDsGVciDk",
       "description": [
         "Engineered decoupled, modular backend web services pairing fine-tuned text processing inputs alongside the Gemini API to compute instant credibility indexing."
       ]
@@ -85,6 +88,7 @@
     {
       "name": "VaporMedia & Instarobo",
       "oneliner": "Automated AI Tools",
+      "video": "_qzU0mb7Ubw",
       "technologies": ["Python", "GenAI", "Web Scraping"],
       "description": [
         "Co-developed core logic for an automated live GenAI news analyst and an automated messaging workflow platform for custom creator outreach."
@@ -94,6 +98,7 @@
       "name": "Glance",
       "oneliner": "Productivity Chrome Extension",
       "technologies": ["JavaScript", "Chrome Extensions API"],
+      "video": "_qzU0mb7Ubw",
       "description": [
         "Created a custom browser extension for managing daily tasks, tracking weather updates, and displaying motivational quotes directly in the browser."
       ]

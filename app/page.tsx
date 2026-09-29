@@ -26,21 +26,36 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="projects" className="flex flex-row h-screen items-center justify-center">
-          <div className="w-full">
-            <AnalogDial
-              className="w-full"
-              projects={projectNames}
-              onActiveChange={(index) => {
-                setActiveProjectIndex(index);
-                setProjectDialogOpen(true);
-              }}
-            />
-            <Projects
-              selectedIndex={activeProjectIndex}
-              open={projectDialogOpen}
-              onOpenChange={setProjectDialogOpen}
-            />
+        <div id="projects" className="flex flex-col my-2 w-full items-center
+         md:flex-row md:justify-between">
+          <div className="flex gap-2 ring-1 rounded-xl p-2 flex-col h-full w-full items-center justify-around
+          lg:flex-row 
+          ">
+
+              <div className="flex">
+                <Projects
+                  selectedIndex={activeProjectIndex}
+                  open={projectDialogOpen}
+                  onOpenChange={setProjectDialogOpen}
+                  className="md:max-w-3xl"
+                />
+              </div>
+
+              <div className="
+              flex w-[60%] h-[20%] max-h-50 min-h-40
+              md:w-[30%]  
+              lg:static lg:translate-x-0 
+              ">
+                <AnalogDial
+                  className="w-full ring-1 md:max-w-2xl "
+                  projects={projectNames}
+                  onActiveChange={(index) => {
+                    setActiveProjectIndex(index);
+                    setProjectDialogOpen(true);
+                  }}
+                />
+            </div>
+
           </div>
         </div>
       </main>

@@ -1,6 +1,8 @@
 import React from 'react'
 import Info from './Info.json'
-import {cn} from 'cn'
+import {cn} from '@/lib/utils'
+import YoutubeEmbed from './VideoFrame'
+
 import {
     Dialog,
   DialogClose,
@@ -13,6 +15,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog'
+
 interface ProjectsProps {
     className?: string;
     id?: string;
@@ -26,25 +29,30 @@ export default function Projects({className, id, selectedIndex = 0, open, onOpen
     const project = projects[selectedIndex] ?? projects[0]
 
     return (
-        <div id={id} className={cn("flex flex-col gap-4 max-w-xl mx-auto items-start", className)}>
-                <Dialog open={open} onOpenChange={onOpenChange}>
-                    <DialogContent>
-                    <DialogHeader>
-                        <DialogTitle>Projects</DialogTitle>
-                        <DialogDescription>
-                        Here are some of my projects.
-                        </DialogDescription>
-                    </DialogHeader>
-                    <div className="flex flex-col gap-4">
-                        <div className="flex flex-col gap-2">
-                            <h3 className="text-lg font-semibold">{project.name}</h3>
-                            <p className="text-sm text-muted-foreground">{project.description}</p>
-                        </div>
-                    </div>
-                    <DialogFooter>
-                    </DialogFooter>
-                    </DialogContent>
-                </Dialog>
-        </div>
+        <ProjectCard className={cn(`flex flex-col gap-2 p-4 rounded-xl`, className)}>
+            <ProjectCard.title className=''>{project.name}</ProjectCard.title>
+            <ProjectCard.description className=''>{project.description}</ProjectCard.description>
+            <YoutubeEmbed videoId={project.video} className='rounded-lg w-full ring-1 ring-taupe-300/20'/>
+        </ProjectCard>
     )
-    }
+}
+
+function ProjectCard({children, className}:{children?: React.ReactNode, className?: string}){
+    return (<div className={cn("", className)}>
+        {children} 
+    </div>)
+}
+
+ProjectCard.title = ({className, children}:{className?: string, children?: React.ReactNode}) => {
+return (
+<div className={cn('text-lg font-bold', className)}>{children}</div>
+) 
+}
+
+ProjectCard.description = ({className, children}:{className?: string, children?: React.ReactNode}) => {
+return (
+    <div className={cn('text-sm text-muted-foreground', className)}>{children}</div>
+) 
+}
+
+

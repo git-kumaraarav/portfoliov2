@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { ChevronUp, ChevronDown } from 'lucide-react';
-import { cn } from 'cn';
+import {cn} from '@/lib/utils'
 
 const ITEM_ANGLE = 24; // Degrees between each major project
 const RADIUS = 250; // 3D cylinder radius in pixels
@@ -216,7 +216,7 @@ export default function AnalogDial({ className, projects, onActiveChange }: Anal
   }
 
   return (
-    <div className={cn(" ring rounded-lg dark:bg-zinc-950 flex flex-col items-center justify-center font-sans text-zinc-900 dark:text-zinc-50 overflow-hidden select-none", className)}>
+    <div className={cn("flex flex-col ring rounded-lg dark:bg-zinc-950 items-center justify-center font-sans text-zinc-900 dark:text-zinc-50 overflow-hidden select-none", className)}>
       
       {/* 3D Wheel Container */}
       <div 
@@ -308,19 +308,20 @@ export default function AnalogDial({ className, projects, onActiveChange }: Anal
                       : 'w-3 h-[1px] bg-zinc-300 dark:bg-zinc-700'
                   } ${isActive ? 'w-12 opacity-100' : 'opacity-30'}`}
                 />
+
               </div>
+
             );
           })}
 
-          <StubleIndicator
-            className="mt-8"
+          {/* <StubleIndicator
+            className=""
             handlePrev={handlePrev}
             handleNext={handleNext}
             visualOffset={visualOffset}
             projectCount={projects.length}
-          />
+          /> */}
         </div>
-
       </div>
     </div>
   );
@@ -333,10 +334,11 @@ export function StubleIndicator({className, handlePrev, handleNext, visualOffset
   return (
     <>
       {/* Subtle indicator and Accessible Controls */}
-      <div className="absolute bottom-[-50px] md:flex flex-col items-center gap-4">
+      <div className={cn("absolute top-[50%] left-[-40%] md:bottom-0 md:left-[35%] md:top-[120%] md:rotate-0 md:flex flex-col items-center gap-4 rotate-90", className)}>
+        
         <div className="flex items-center gap-6 bg-zinc-100 dark:bg-zinc-900/50 p-2 rounded-full shadow-sm border border-zinc-200 dark:border-zinc-800/50 backdrop-blur-sm">
           <button 
-            onClick={handlePrev}
+            onClick={handlePrev}  
             className="p-1 text-zinc-400 hover:text-zinc-900 dark:text-zinc-500 dark:hover:text-zinc-50 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400 rounded-full bg-white dark:bg-zinc-800/50 shadow-sm"
             aria-label="Previous project"
           >

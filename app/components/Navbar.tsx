@@ -1,6 +1,7 @@
 import { Button }  from "@/components/ui/button"
 import Image from 'next/image'
 import Link from 'next/link'
+import {cn} from '@/lib/utils'
 
 import { 
   Briefcase, 
@@ -11,7 +12,6 @@ import {
 } from "lucide-react";
 
 import React from "react";
-import {cn} from 'cn'
 
 function NavButton({ children, href}: { children: React.ReactNode; href: string}) {
   return (
