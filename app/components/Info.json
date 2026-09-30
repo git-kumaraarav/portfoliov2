@@ -27,10 +27,7 @@
       "startDate": "2025-12",
       "endDate": "2026-05",
       "description": [
-        "Evaluated and validated cutting-edge research papers by engineering simulation testbeds utilizing TensorFlow, PyTorch, Flower AI, and MATLAB.",
-        "Spearheaded testing workflows for FedCO, an optimization project involving distributed Federated Learning and edge Computational Offloading mechanisms.",
-        "Leveraged Advanced GenAI prompting models and structural analytical techniques to compress discovery lifecycles for edge UAV surveillance configurations."
-      ]
+        "Evaluated and validated cutting-edge research papers by engineering simulation testbeds utilizing TensorFlow, PyTorch, Flower AI, and MATLAB."]
     },
     {
       "company": "Whatbytes",
@@ -39,9 +36,7 @@
       "startDate": "2025-05",
       "endDate": "2025-10",
       "description": [
-        "Architected, debugged, and optimized clean, highly performant production RESTful API workflows utilizing Python, Django, and Django REST Framework.",
-        "Engineered resilient, multi-threaded site scrapers and complex data pipelines using Playwright, Selenium, BeautifulSoup, and scheduled task management via Celery-Beats.",
-        "Drove web scraper target data success rate up to 90% reliability by implementing custom network request interception models, defeating anti-bot blocks."
+        "Architected, debugged, and optimized clean, highly performant production RESTful API workflows utilizing Python, Django, and Django REST Framework."
       ]
     }, 
     {
@@ -70,7 +65,7 @@
       "name": "Bachelors Store",
       "oneliner": "Targeted E-Commerce Platform",
       "technologies": ["Python", "Django", "Django REST Framework", "Web API"],
-      "video": "0zFfcEr1e9U",
+      "video": "D_3oU-YG9yI",
       "description": [
         "Developed a scalable specialized backend architecture for a digital marketplace, delivering seamless product catalogue parsing and stateful cart persistence."
       ]
@@ -79,7 +74,7 @@
       "name": "Project FightFake",
       "oneliner": "Machine Learning News Validator",
       "technologies": ["Flask", "Gemini API", "JavaScript Extension", "NLP"],
-      "video": "BHPDsGVciDk",
+      "video": "Ls0anHlPjGw",
       "description": [
         "Engineered decoupled, modular backend web services pairing fine-tuned text processing inputs alongside the Gemini API to compute instant credibility indexing."
       ]
@@ -87,7 +82,7 @@
     {
       "name": "VaporMedia",
       "oneliner": "Automated AI Tools",
-      "video": "_qzU0mb7Ubw",
+      "video": "",
       "technologies": ["Python", "GenAI", "Web Scraping"],
       "description": [
         "Co-developed core logic for an automated live GenAI news analyst and an automated messaging workflow platform for custom creator outreach."
@@ -97,7 +92,7 @@
       "name": "Glance",
       "oneliner": "Productivity Chrome Extension",
       "technologies": ["JavaScript", "Chrome Extensions API"],
-      "video": "_qzU0mb7Ubw",
+      "video": "jQuLJ1nNf1g",
       "description": [
         "Created a custom browser extension for managing daily tasks, tracking weather updates, and displaying motivational quotes directly in the browser."
       ]

@@ -33,7 +33,7 @@ export default function Projects({className, id, selectedIndex = 0, open, onOpen
             <h2 className="p-4 text-3xl font-bold">Projects</h2>
             <ProjectCard className={cn(`flex flex-col gap-2 p-4 rounded-xl`, className)}>
                 <ProjectCard.title className=''>{project.name}</ProjectCard.title>
-                <ProjectCard.description className=''>{project.description}</ProjectCard.description>
+                <ProjectCard.description className='text-balance break-words'>{project.description}</ProjectCard.description>
                 <YoutubeEmbed videoId={project.video} className='rounded-lg w-full ring-1 ring-taupe-300/20'/>
             </ProjectCard>
         </div>

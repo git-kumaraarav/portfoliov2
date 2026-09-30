@@ -1,12 +1,3 @@
-import { Card, 
-  CardHeader,
-  CardFooter,
-  CardTitle,
-  CardAction,
-  CardDescription,
-  CardContent,
- } from '@/components/ui/card'
-
 import {
   Timeline,
   TimelineContent,
@@ -18,13 +9,8 @@ import {
   TimelineTitle,
 } from '@/components/reui/timeline'
 
-import {
-  Briefcase,
-  ChartNoAxesGantt,
-  CodeXml,
-  Mail,
-  User
-} from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
 import React from 'react'
 import { workspaceConfigSchema } from 'shadcn/schema';
@@ -36,7 +22,7 @@ function TimelineWrapper ({children, step, work} : {children?: React.ReactNode |
     <>
       <TimelineItem step={step} className="">
         <TimelineHeader>
-          <TimelineIndicator render={<Briefcase/>} className=""/>
+          <TimelineIndicator render={<FontAwesomeIcon icon={faBriefcase} />} className=""/>
           <TimelineTitle>{work.company}</TimelineTitle>
           <TimelineDate>{work.startDate} - {work.endDate}</TimelineDate>
         </TimelineHeader>

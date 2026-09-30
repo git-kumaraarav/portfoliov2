@@ -8,7 +8,13 @@ import {
   TimelineSeparator,
   TimelineTitle,
 } from "@/components/reui/timeline"
-import { GitForkIcon, GitPullRequestArrowIcon, GitCompareArrowsIcon, GitMergeIcon } from "lucide-react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faCodeCompare,
+  faCodeFork,
+  faCodeMerge,
+  faCodePullRequest,
+} from "@fortawesome/free-solid-svg-icons"
 
 const gitActivity = [
   {
@@ -18,7 +24,7 @@ const gitActivity = [
     description:
       "Forked the repository to create a new branch for development.",
     icon: (
-      <GitForkIcon className="size-4" />
+      <FontAwesomeIcon icon={faCodeFork} className="size-4" />
     ),
   },
   {
@@ -28,7 +34,7 @@ const gitActivity = [
     description:
       "Submitted PR #342 with new feature implementation. Waiting for code review.",
     icon: (
-      <GitPullRequestArrowIcon className="size-3.5" />
+      <FontAwesomeIcon icon={faCodePullRequest} className="size-3.5" />
     ),
   },
   {
@@ -38,7 +44,7 @@ const gitActivity = [
     description:
       "Received comments on PR. Minor adjustments needed in error handling.",
     icon: (
-      <GitCompareArrowsIcon className="size-3.5" />
+      <FontAwesomeIcon icon={faCodeCompare} className="size-3.5" />
     ),
   },
   {
@@ -48,7 +54,7 @@ const gitActivity = [
     description:
       "Merged the feature branch into the main branch. Ready for deployment.",
     icon: (
-      <GitMergeIcon className="size-3.5" />
+      <FontAwesomeIcon icon={faCodeMerge} className="size-3.5" />
     ),
   },
 ]

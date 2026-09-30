@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "@base-ui/react": "^1.8.0",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^3.5.0",
     "@tabler/icons-react": "^3.48.0",
     "class-variance-authority": "^0.7.1",
     "cn": "^0.4.0",
-    "lucide-react": "^1.48.0",
     "motion": "^13.4.6",
     "next": "16.3.6",
     "postcss": "^8.5.28",

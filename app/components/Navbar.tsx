@@ -3,13 +3,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {cn} from '@/lib/utils'
 
-import { 
-  Briefcase, 
-  ChartNoAxesGantt, 
-  CodeXml, 
-  Trophy,
-  User
-} from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBriefcase,
+  faChartGantt,
+  faCode,
+  faTrophy,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
 
 import React from "react";
 
@@ -31,7 +32,7 @@ NavButton.icon = ({children} : {children?:React.ReactNode}) => {
 }
 
 const sections = {
-  "Experience": Briefcase, "Projects" : ChartNoAxesGantt, "Skills": CodeXml, "Certifications": Trophy, "Me": User
+  "Experiences": faBriefcase, "Projects" : faChartGantt, "Skills": faCode, "Certifications": faTrophy, "Me": faUser
 }
 
 function Navbar({ className }: { className?: string }) {
@@ -39,15 +40,17 @@ function Navbar({ className }: { className?: string }) {
     <div className={cn('flex flex-row justify-between px-4 py-3 w-full max-w-6xl bg-primary rounded-xl mx-auto my-2', className)}>
       {/* Logo */}
       <div className="flex flex-row items-center gap-1 p">
+        <Link href="#" className="flex flex-row items-center gap-1">
         <Image src="/cat2.webp" alt="Aarav" width={30} height={30} className="rounded-[20%]" />
         <div className="hidden md:block">@kumaraarav</div>
+        </Link>
       </div>  
 
       {/* Navigation Links */}
       <div className="flex flex-row gap-4 items-center">
           {Object.entries(sections).map(([key, Icon], i) => 
           <NavButton href={`#${key.toLowerCase()}`} key={i}>
-            <NavButton.icon><Icon/></NavButton.icon>
+            <NavButton.icon><FontAwesomeIcon icon={Icon}/></NavButton.icon>
             <NavButton.text>{key}</NavButton.text>
           </NavButton>
            )} 

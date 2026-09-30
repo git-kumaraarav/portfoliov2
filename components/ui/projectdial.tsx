@@ -1,7 +1,8 @@
 'use client'; 
 
 import React, { useState, useRef, useEffect, useCallback } from 'react';
-import { ChevronUp, ChevronDown } from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import {cn} from '@/lib/utils'
 
 const ITEM_ANGLE = 22; // Degrees between each major project
@@ -342,7 +343,7 @@ export function StubleIndicator({className, handlePrev, handleNext, visualOffset
             className="p-1 text-zinc-400 hover:text-zinc-900 dark:text-zinc-500 dark:hover:text-zinc-50 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400 rounded-full bg-white dark:bg-zinc-800/50 shadow-sm"
             aria-label="Previous project"
           >
-            <ChevronUp className="w-5 h-5" />
+            <FontAwesomeIcon icon={faChevronUp} className="w-5 h-5" />
           </button>
 
           <div className="text-sm font-medium text-zinc-500 dark:text-zinc-400 tracking-widest uppercase w-16 text-center" aria-live="polite">
@@ -354,7 +355,7 @@ export function StubleIndicator({className, handlePrev, handleNext, visualOffset
             className="p-1 text-zinc-400 hover:text-zinc-900 dark:text-zinc-500 dark:hover:text-zinc-50 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400 rounded-full bg-white dark:bg-zinc-800/50 shadow-sm"
             aria-label="Next project"
           >
-            <ChevronDown className="w-5 h-5" />
+            <FontAwesomeIcon icon={faChevronDown} className="w-5 h-5" />
           </button>
         </div>
       </div>
