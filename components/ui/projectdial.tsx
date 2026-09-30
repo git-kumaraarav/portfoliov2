@@ -4,8 +4,8 @@ import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { ChevronUp, ChevronDown } from 'lucide-react';
 import {cn} from '@/lib/utils'
 
-const ITEM_ANGLE = 24; // Degrees between each major project
-const RADIUS = 250; // 3D cylinder radius in pixels
+const ITEM_ANGLE = 22; // Degrees between each major project
+const RADIUS = 280; // 3D cylinder radius in pixels
 const TICKS_PER_ITEM = 10; // Number of ticks between each project
 const DRAG_SENSITIVITY = 0.015; // How much drag moves the dial
 const WHEEL_SENSITIVITY = 0.006; // How much scroll moves the dial
@@ -216,7 +216,7 @@ export default function AnalogDial({ className, projects, onActiveChange }: Anal
   }
 
   return (
-    <div className={cn("flex flex-col ring rounded-lg dark:bg-zinc-950 items-center justify-center font-sans text-zinc-900 dark:text-zinc-50 overflow-hidden select-none", className)}>
+    <div className={cn("flex flex-col rounded-lg dark:bg-zinc-950 items-center justify-center font-sans text-zinc-900 dark:text-zinc-50 overflow-hidden select-none", className)}>
       
       {/* 3D Wheel Container */}
       <div 
@@ -267,7 +267,7 @@ export default function AnalogDial({ className, projects, onActiveChange }: Anal
             return (
               <div
                 key={`tick-${tickIndex}`}
-                className="absolute w-full px-8 md:px-16 top-1/2 -mt-[14px] h-[28px] flex items-center justify-between pointer-events-auto"
+                className="absolute w-full px-8 md:px-16 top-1/2 flex items-center justify-between pointer-events-auto"
                 style={{
                   transform: `rotateX(${-angle}deg) translateZ(${RADIUS}px)`,
                   transformOrigin: 'center center',
@@ -279,20 +279,20 @@ export default function AnalogDial({ className, projects, onActiveChange }: Anal
                 <div 
                   className={`transition-all duration-300 rounded-full ${
                     isMajor 
-                      ? 'w-15 md:w-8 h-[2px] bg-zinc-800 dark:bg-zinc-200' 
-                      : 'w-3 md:w-5 h-[1px] bg-zinc-300 dark:bg-zinc-700'
+                      ? 'w-8 md:w-16 h-[2px] bg-zinc-800 dark:bg-zinc-200' 
+                      : 'w-4 md:w-8 h-[1px] bg-zinc-300 dark:bg-zinc-700'
                   } ${isActive ? 'opacity-100' : 'opacity-30'}`}
                 />
 
                 {/* Typography Container */}
-                <div className="flex-1 flex justify-center px-4">
+                <div className="flex-1 flex justify-center px-1">
                   {project && (
                     <button
                       onClick={() => handleItemClick(projectIndex)}
-                      className={`text-xl md:text-3xl font-medium tracking-tight transition-all duration-300 focus:outline-none ${
+                      className={`text-xl md:text-xl  tracking-tight transition-all duration-300 focus:outline-none ${
                         isActive 
-                          ? 'text-zinc-900 dark:text-zinc-50 scale-100' 
-                          : 'text-zinc-400 dark:text-zinc-600 scale-95 cursor-pointer hover:text-zinc-600 dark:hover:text-zinc-400'
+                          ? 'text-zinc-900 font-medium dark:text-zinc-50 scale-100' 
+                          : 'text-zinc-600 font-light dark:text-zinc-600 scale-80 cursor-pointer hover:text-zinc-600 dark:hover:text-zinc-400'
                       }`}
                     >
                       {project}
@@ -304,9 +304,9 @@ export default function AnalogDial({ className, projects, onActiveChange }: Anal
                 <div 
                   className={`transition-all duration-300 rounded-full ${
                     isMajor 
-                      ? 'w-8 h-[2px] bg-zinc-800 dark:bg-zinc-200' 
-                      : 'w-3 h-[1px] bg-zinc-300 dark:bg-zinc-700'
-                  } ${isActive ? 'w-12 opacity-100' : 'opacity-30'}`}
+                      ? 'w-8 md:w-16 h-[2px] bg-zinc-800 dark:bg-zinc-200' 
+                      : 'w-4 md:w-8  h-[1px] bg-zinc-300 dark:bg-zinc-700'
+                  } ${isActive ? 'opacity-100' : 'opacity-30'}`}
                 />
 
               </div>

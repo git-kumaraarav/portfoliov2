@@ -18,7 +18,7 @@
     },
     "headline": "Fascinated with Linux and Open Source Softwares | CS50x | CS50w"
   },
-  "about": "Software Engineer specializing in backend architecture, RESTful API design, and AI integrations. Experienced in optimizing data pipelines, building scalable web systems, and deploying machine learning models across edge devices.",
+  "about": "Software Engineer with strong analytical and problem-solving skills.",
   "work": [
     {
       "company": "ExpertMinds Technologies LLP",
@@ -43,17 +43,16 @@
         "Engineered resilient, multi-threaded site scrapers and complex data pipelines using Playwright, Selenium, BeautifulSoup, and scheduled task management via Celery-Beats.",
         "Drove web scraper target data success rate up to 90% reliability by implementing custom network request interception models, defeating anti-bot blocks."
       ]
-    }
-  ],
-  "education": [
+    }, 
     {
-      "institution": "Guru Ghasidas Vishwavidyalaya (A Central University)",
-      "area": "Information Technology",
-      "studyType": "Bachelor of Technology (B.Tech.)",
+      "company": "Guru Ghasidas Vishwavidyalaya (A Central University)",
+      "position": "Information Technology (7.8 CGPA)",
       "location": "Bilaspur, C.G., India",
       "startDate": "2022-12",
       "endDate": "2026-05",
-      "score": "7.4 CGPA"
+      "description":[
+        "Graduated in IT with good academic standing, focusing on software development and core computer science concepts."
+      ]
     }
   ],
   "projects": [
@@ -86,7 +85,7 @@
       ]
     },
     {
-      "name": "VaporMedia & Instarobo",
+      "name": "VaporMedia",
       "oneliner": "Automated AI Tools",
       "video": "_qzU0mb7Ubw",
       "technologies": ["Python", "GenAI", "Web Scraping"],
@@ -115,15 +114,167 @@
   "certifications": [
     {
       "title": "CS50x: Introduction to Computer Science & Web Programming",
-      "issuer": "Harvard University"
+      "issuer": "Harvard University",
+      "link": "",
+      "defaultImage": "",
+      "selectedImage": ""
     },
     {
       "title": "Data Science & Core ML: Introduction & Intermediate Machine Learning",
-      "issuer": "Kaggle"
+      "issuer": "Kaggle",
+      "link": "",
+      "defaultImage": "",
+      "selectedImage": ""
     },
     {
       "title": "Develop GenAI Apps with Gemini and Streamlit",
-      "issuer": "Google Cloud"
+      "issuer": "Google Cloud",
+      "link": "",
+      "defaultImage": "",
+      "selectedImage": ""
+    }
+  ], 
+
+  "skillsApplied": [
+    {
+      "category": "Python & Backend Frameworks",
+      "technologies": [
+        "Django",
+        "Django REST Framework",
+        "Flask",
+        "Python"
+      ],
+      "applications": [
+        {
+          "context": "Whatbytes (Internship)",
+          "description": "Architected and optimized production RESTful APIs using Python, Django, and DRF.",
+          "link": ""
+        },
+        {
+          "context": "Bachelors Store (Project)",
+          "description": "Developed a scalable digital marketplace backend for product catalog parsing and cart persistence using Python, Django, and DRF.",
+          "link": ""
+        },
+        {
+          "context": "Blood Network (Project)",
+          "description": "Designed a localized tracking and verification backend for a healthcare platform using Django.",
+          "link": "https://blood-network.onrender.com/"
+        },
+        {
+          "context": "Project FightFake (Project)",
+          "description": "Engineered modular backend web services using Flask to compute credibility indexing metrics.",
+          "link": "https://github.com/DarkIce000/Project_FightFake"
+        }
+      ]
+    },
+    {
+      "category": "Artificial Intelligence, Machine Learning & NLP",
+      "technologies": [
+        "PyTorch",
+        "TensorFlow",
+        "Gemini API",
+        "Flower AI",
+        "NLP"
+      ],
+      "applications": [
+        {
+          "context": "ExpertMinds Technologies LLP (Internship)",
+          "description": "Engineered simulation testbeds for distributed Federated Learning (FedCO) utilizing TensorFlow, PyTorch, and Flower AI. Applied advanced GenAI prompting for edge UAV configurations.",
+          "link": ""
+        },
+        {
+          "context": "Project FightFake (Project)",
+          "description": "Integrated fine-tuned text processing inputs with the Gemini API and NLP to instantly validate internet articles.",
+          "link": ""
+        },
+        {
+          "context": "VaporMedia (Project/Internship)",
+          "description": "Co-developed the core logic for an automated, live GenAI news analyst and summarizer.",
+          "link": "https://main.d1xu2xcunkewir.amplifyapp.com/"
+        }
+      ]
+    },
+    {
+      "category": "Web Scraping, Automation & Task Scheduling",
+      "technologies": [
+        "Playwright",
+        "Selenium",
+        "BeautifulSoup",
+        "Celery"
+      ],
+      "applications": [
+        {
+          "context": "Whatbytes (Internship)",
+          "description": "Engineered multi-threaded site scrapers and complex data pipelines. Implemented custom network request interception to defeat anti-bot blocks, pushing target data success rates to 90%. Managed scheduled asynchronous tasks via Celery-Beats.",
+          "link": ""
+        },
+        {
+          "context": "Instarobo (Project/Internship)",
+          "description": "Built an automated messaging workflow platform for creator outreach scale.",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "category": "JavaScript & Client-Side Integration",
+      "technologies": [
+        "JavaScript",
+        "Chrome Extensions API"
+      ],
+      "applications": [
+        {
+          "context": "Project FightFake (Project)",
+          "description": "Developed the frontend validation interface as a JavaScript Chrome Extension.",
+          "link": ""
+        },
+        {
+          "context": "Glance (Project)",
+          "description": "Created a custom Chrome extension for daily task management and personalized updates using JavaScript.",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "category": "Databases & Deployment",
+      "technologies": [
+        "PostgreSQL",
+        "Render",
+        "SQL"
+      ],
+      "applications": [
+        {
+          "context": "Blood Network (Project)",
+          "description": "Structured and deployed a robust transactional PostgreSQL database schema on Render to map interactions between donors, recipients, and hospitals.",
+          "link": ""
+        },
+        {
+          "context": "Bachelors Store (Project)",
+          "description": "Implemented stateful cart persistence mechanisms using relational database structures.",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "category": "Core Computer Science",
+      "technologies": [
+        "DSA",
+        "Distributed Systems",
+        "MVC Architecture",
+        "Multi-threading"
+      ],
+      "applications": [
+        {
+          "context": "ExpertMinds Technologies LLP (Internship)",
+          "description": "Worked on distributed federated learning and edge computational offloading mechanisms across hardware-constrained devices.",
+          "link": ""
+        },
+        {
+          "context": "Whatbytes (Internship)",
+          "description": "Applied multi-threading and decoupled, modular architecture to build resilient backend pipelines.",
+          "link": ""
+        }
+      ]
     }
   ]
+
 }

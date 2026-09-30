@@ -15,7 +15,18 @@
         "AGENTS.md": true,
         ".gitignore": true,
         ".env.production": true,
-        ".next": true
+        ".next": true,
+        "lib": true,
+        "public": true,
+        "tsconfig.tsbuildinfo": true,
+        "eslint.config.mjs": true,
+        "next-env.d.ts": true,
+        "next.config.ts": true,
+        "package.json": true,
+        "components.json": true,
+        "postcss.config.mjs": true,
+        "tsconfig.json": true,
+        "app/favicon.ico": true
     },
     "hide-files.files": [
         "node_modules",
@@ -27,7 +38,18 @@
         "AGENTS.md",
         ".gitignore",
         ".env.production",
-        ".next"
+        ".next",
+        "lib",
+        "public",
+        "tsconfig.tsbuildinfo",
+        "eslint.config.mjs",
+        "next-env.d.ts",
+        "next.config.ts",
+        "package.json",
+        "components.json",
+        "postcss.config.mjs",
+        "tsconfig.json",
+        "app/favicon.ico"
     ], 
     "workbench.editor.customLabels.patterns": {
         "**/app/**/page.tsx": "${dirname(1)}/${dirname} - page.tsx",

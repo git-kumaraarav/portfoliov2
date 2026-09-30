@@ -24,7 +24,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={cn("antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable)}
+      className={cn("antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable, "scroll-smooth")}
     >
       <body className="bg-taupe-400 text-white">
         {children}

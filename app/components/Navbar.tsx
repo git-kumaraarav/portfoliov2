@@ -7,13 +7,13 @@ import {
   Briefcase, 
   ChartNoAxesGantt, 
   CodeXml, 
-  Mail,
+  Trophy,
   User
 } from "lucide-react";
 
 import React from "react";
 
-function NavButton({ children, href}: { children: React.ReactNode; href: string}) {
+function NavButton({ children, href}: { children?: React.ReactNode; href: string}) {
   return (
     <Link href={href} className="p-1 rounded-lg flex flex-row items-center gap-1
     hover:bg-taupe-300/20 transition-all duration-300">
@@ -22,16 +22,16 @@ function NavButton({ children, href}: { children: React.ReactNode; href: string}
   )
 }
 
-NavButton.text = ({children} : {children:React.ReactNode}) => {
+NavButton.text = ({children} : {children?:React.ReactNode}) => {
   return <div className="hidden lg:block">{children}</div>
 }
 
-NavButton.icon = ({children} : {children:React.ReactNode}) => {
+NavButton.icon = ({children} : {children?:React.ReactNode}) => {
   return <div className="">{children}</div>
 }
 
 const sections = {
-  "Experience": Briefcase, "Projects" : ChartNoAxesGantt, "Skills": CodeXml, "Contact": Mail, "Me": User
+  "Experience": Briefcase, "Projects" : ChartNoAxesGantt, "Skills": CodeXml, "Certifications": Trophy, "Me": User
 }
 
 function Navbar({ className }: { className?: string }) {
@@ -46,7 +46,7 @@ function Navbar({ className }: { className?: string }) {
       {/* Navigation Links */}
       <div className="flex flex-row gap-4 items-center">
           {Object.entries(sections).map(([key, Icon], i) => 
-          <NavButton href="#experiences" key={i}>
+          <NavButton href={`#${key.toLowerCase()}`} key={i}>
             <NavButton.icon><Icon/></NavButton.icon>
             <NavButton.text>{key}</NavButton.text>
           </NavButton>
