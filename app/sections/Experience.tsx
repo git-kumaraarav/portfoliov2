@@ -16,6 +16,7 @@ import React from 'react'
 import { workspaceConfigSchema } from 'shadcn/schema';
 import info from './Info.json'
 import { cn } from 'cn'
+import CardLayout from '@/app/components/Cardlayout';
 
 function TimelineWrapper ({children, step, work} : {children?: React.ReactNode | undefined, step: number, work: any}) {
   return (
@@ -39,11 +40,13 @@ function TimelineWrapper ({children, step, work} : {children?: React.ReactNode |
 function Experience({ className }: { className?: string }) {
   const works = info.work 
   return (
-    <Timeline className={cn("mx-auto w-full min-w-0 max-w-xl wrap-break-word", className)}>
-      {works.map((work, index) => (
-        <TimelineWrapper key={index} work={work} step={index}></TimelineWrapper>
-      )) }
-    </Timeline>
+    <CardLayout className={cn("", className)}>
+      <Timeline className={cn("mx-auto w-full min-w-0 max-w-xl wrap-break-word")}>
+        {works.map((work, index) => (
+          <TimelineWrapper key={index} work={work} step={index}></TimelineWrapper>
+        )) }
+      </Timeline>
+    </CardLayout>
   )
 }
 

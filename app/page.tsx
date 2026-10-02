@@ -1,16 +1,18 @@
 "use client";
 
 import { useState } from "react";
-import Navbar from "./components/Navbar";
-import Experience from "./components/Experience";
-import info from "./components/Info.json";
-import About from "./components/About";
-import Projects from "./components/Projects";
+import Navbar from "./sections/Navbar";
+import Experience from "./sections/Experience";
+import info from "./sections/Info.json";
+import About from "./sections/About";
+import Projects from "./sections/Projects";
 import AnalogDial from "@/components/ui/projectdial";
-import Skills from "./components/Skills";
-import ScrollableCardStackDemo from "./components/Certifications";
-import GlowCursor from "./components/Cursor";
-import Footer from "./components/Footer";
+import Skills from "./sections/Skills";
+import ScrollableCardStackDemo from "./sections/Certifications";
+import GlowCursor from "./sections/Cursor";
+import Footer from "./sections/Footer";
+import CardLayout from "./components/Cardlayout";
+import SectionLayout from "./components/SectionLayout";
 
 export default function Home() {
   const [activeProjectIndex, setActiveProjectIndex] = useState(0);
@@ -19,31 +21,33 @@ export default function Home() {
 
   return (
     <>
-      <Navbar className="sticky top-4 z-40 w-[95%]" />
-      <GlowCursor />
+    {/* Navbar */}
+      <Navbar className="sticky top-4 z-40 w-[95%] bg-surface" />
+      <GlowCursor className="" />
 
       <main className="@container w-[95%] mx-auto max-w-5xl">
 
-        <div className="flex flex-wrap pt-40 pb-10 lg:flex">
-          <div id="#experiences" className=" gap-10
+        {/* About and Experiences */}
+        <SectionLayout className="flex flex-wrap lg:flex">
+          <div id="#experiences" className=" gap-10 
           flex flex-wrap lg:flex-nowrap lg:justify-center">
             <About className="max-w-2xl text-balance"/>
-            <Experience className="flex flex-col"/> 
+            <Experience className="flex flex-col bg-surface rounded-xl p-4 "/> 
           </div>
-        </div>
+        </SectionLayout>
 
-        <div id="projects" className="flex flex-col w-full items-center
-         md:flex-row md:justify-between">
-          <div className="flex gap-2 rounded-xl p-2 flex-col h-full w-full items-center justify-around
-          lg:flex-row 
-          ">
 
+
+        {/* Projects */}
+        <SectionLayout id="projects" sectionName="Projects" className="flex w-full
+         flex-col ">
+            <CardLayout> 
               <div className="flex">
                 <Projects
                   selectedIndex={activeProjectIndex}
                   open={projectDialogOpen}
                   onOpenChange={setProjectDialogOpen}
-                  className="md:max-w-3xl"
+                  className="md:max-w-3xl "
                 />
               </div>
 
@@ -60,18 +64,21 @@ export default function Home() {
                   }}
                 />
             </div>
+          </CardLayout>
+        </SectionLayout>
 
-          </div>
-        </div>
-        <div id="skills" className="my-10 font-bold ring-zinc-200 rounded-xl">
-          <h2 className="text-3xl p-4">Skills</h2>  
-          <Skills></Skills>
-        </div>
+        <SectionLayout id="skills" sectionName="Skills">
+          <CardLayout>
+            <Skills className=""></Skills>
+          </CardLayout>
+        </SectionLayout>
 
-        <div id="certifications" className="my-10 font-bold ring-zinc-200 rounded-xl">
-          <h2 className="text-3xl p-4">Certifications</h2>  
-          <ScrollableCardStackDemo />
-        </div>
+        <SectionLayout id="certifications" sectionName="Certifications">
+          <CardLayout> 
+            <ScrollableCardStackDemo />
+          </CardLayout>
+        </SectionLayout>
+
 
         <Footer className="my-10 font-bold ring-zinc-200 rounded-xl" />
 
