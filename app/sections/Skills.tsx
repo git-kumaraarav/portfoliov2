@@ -31,7 +31,7 @@ const Skills = ({ className, children }: { className?: string; children?: React.
             [...skillMap].map(([skill, apps], index) => {
 
                 return (<HoverCard key={`${skill}-${index}`}>
-                    <HoverCardTrigger className="inline-flex rounded-2xl border bg-surface px-3 py-2 text-sm font-medium text-foreground transition text-fg hover:bg-accent/80 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=open]:bg-accent data-[state=open]:text-fg">
+                    <HoverCardTrigger className="flex rounded-2xl border border-accent bg-accent/25 px-3 py-2 text-sm font-medium text-foreground transition text-fg hover:bg-accent/80 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=open]:bg-accent data-[state=open]:text-fg">
                         {skill}
                     </HoverCardTrigger>
                     <HoverCardContent side="top" align="start" className="max-w-xs">

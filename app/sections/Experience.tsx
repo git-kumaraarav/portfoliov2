@@ -21,16 +21,16 @@ import CardLayout from '@/app/components/Cardlayout';
 function TimelineWrapper ({children, step, work} : {children?: React.ReactNode | undefined, step: number, work: any}) {
   return (
     <>
-      <TimelineItem step={step} className="">
+      <TimelineItem step={1} className="">
         <TimelineHeader>
-          <TimelineIndicator render={<FontAwesomeIcon icon={faBriefcase} />} className=""/>
-          <TimelineTitle>{work.company}</TimelineTitle>
-          <TimelineDate>{work.startDate} - {work.endDate}</TimelineDate>
+          <TimelineIndicator render={<FontAwesomeIcon icon={faBriefcase} />} className="text-accent"/>
+          <TimelineTitle className="text-accent">{work.company}</TimelineTitle>
+          <TimelineDate className="text-fg/70">{work.startDate} - {work.endDate}</TimelineDate>
         </TimelineHeader>
         <TimelineSeparator />
-        <TimelineContent className="flex min-w-0 flex-col gap-2 break-words">
-          {work.position && <div className="font-semibold">{work.position}</div>}
-          {work.description && <div className="font-semibold mt-2">{work.description}</div>}
+        <TimelineContent className="flex min-w-0 flex-col gap-2 text-pretty">
+          {work.position && <div className=" text-sm text-fg/70">{work.position}</div>}
+          {work.description && <div className=" mt-2 text-fg/70 ">{work.description}</div>}
         </TimelineContent>
       </TimelineItem>
     </>

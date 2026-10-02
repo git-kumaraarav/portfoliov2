@@ -21,6 +21,15 @@
   "about": "Software Engineer with strong analytical and problem-solving skills.",
   "work": [
     {
+      "company": "Freelancer",
+      "position": "Software Engineer | Backend Developer",
+      "location": "Remote",
+      "startDate": "2026-01",
+      "endDate": "Current",
+      "description": [
+        "Evaluated and validated cutting-edge research papers by engineering simulation testbeds utilizing TensorFlow, PyTorch, Flower AI, and MATLAB."]
+    },
+    {
       "company": "ExpertMinds Technologies LLP",
       "position": "Edge AI / Backend Intern",
       "location": "Bilaspur, India (On-site)",

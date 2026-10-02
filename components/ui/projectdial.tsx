@@ -268,7 +268,7 @@ export default function AnalogDial({ className, projects, onActiveChange }: Anal
             return (
               <div
                 key={`tick-${tickIndex}`}
-                className="absolute w-full px-8 md:px-16 top-1/2 flex items-center justify-between pointer-events-auto"
+                className="absolute w-full px-8 md:px-2 top-1/2 flex items-center justify-between pointer-events-auto"
                 style={{
                   transform: `rotateX(${-angle}deg) translateZ(${RADIUS}px)`,
                   transformOrigin: 'center center',
@@ -278,11 +278,11 @@ export default function AnalogDial({ className, projects, onActiveChange }: Anal
               >
                 {/* Left Analog Tick */}
                 <div 
-                  className={`transition-all bg-bg duration-300 rounded-full ${
+                  className={`transition-all duration-300 rounded-full h-1 ${
                     isMajor 
-                      ? 'w-8 md:w-16 text-fg h-2' 
-                      : 'w-4 md:w-8 text-fg h-1 '
-                  } ${isActive ? 'opacity-100 ' : 'opacity-30'}`}
+                      ? 'w-8 md:w-16 ' 
+                      : 'w-4 md:w-8'
+                  } ${isActive ? 'opacity-100 bg-accent' : 'opacity-30 bg-accent/99'}`}
                 />
 
                 {/* Typography Container */}
@@ -303,11 +303,11 @@ export default function AnalogDial({ className, projects, onActiveChange }: Anal
 
                 {/* Right Analog Tick */}
                 <div 
-                  className={`transition-all duration-300 rounded-full ${
+                  className={`transition-all duration-300 rounded-full  h-1  text-fg ${
                     isMajor 
-                      ? 'w-8 md:w-16 text-fg h-2' 
-                      : 'w-4 md:w-8 text-fg bg-bg h-1'
-                  } ${isActive ? 'opacity-100' : 'opacity-30'}`}
+                      ? 'w-8 md:w-16' 
+                      : 'w-4 md:w-8'
+                  } ${isActive ? 'opacity-100 bg-accent' : 'opacity-30 bg-accent/99'}`}
                 />
 
               </div>

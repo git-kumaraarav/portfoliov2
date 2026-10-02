@@ -16,6 +16,6 @@ export default function ScrollableCardStackDemo() {
   }));
 
   return (
-    <CalendlyCarousel items={certifications} className="w-full overflow-visible" />
+    <CalendlyCarousel items={certifications} className="w-full overflow-hidden" />
   );
 }

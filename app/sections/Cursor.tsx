@@ -28,7 +28,7 @@ export default function GlowCursor({ className }: { className?: string }) {
   return (
     <motion.div
       // Tailwind classes for a fixed, unclickable, blurred circle
-      className={cn(`pointer-events-none fixed top-0 left-0 z-50 h-[300px] w-[300px] rounded-full bg-blue-500/30 blur-[100px]`, className)}
+      className={cn(`pointer-events-none fixed top-0 left-0 z-0 h-[300px] w-[300px] rounded-full bg-accent/30 blur-[100px]`, className)}
       style={{
         x: cursorX,
         y: cursorY,

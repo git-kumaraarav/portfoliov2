@@ -54,13 +54,13 @@ export default function About({ className }: { className?: string }) {
       </div>
 
       <div className="flex flex-col gap-2 p-3">
-        <p className="text-lg text-muted-foreground">
+        <p className="text-lg text-muted-foreground text-pretty">
           Hi, 👋 I am Aarav, a software developer. I love to build things and explore new technologies.
           I am currently working as a Freelancer building Fullstack and Mobile applications for clients. 
         </p> 
         <div className="my-2"></div>
         <p className="text-lg text-muted-foreground">
-          Connect with me on socials like <span className="text-foreground font-medium">X (formerly Twitter)</span> and <span className="text-foreground font-medium">LinkedIn</span>.
+          Connect with me on socials like <span className="text-accent font-medium">X (formerly Twitter)</span> and <span className="text-accent font-medium">LinkedIn</span>.
         </p> 
       </div>
     </div>

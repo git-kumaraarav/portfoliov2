@@ -25,10 +25,10 @@ export default function Home() {
       <Navbar className="sticky top-4 z-40 w-[95%] bg-surface" />
       <GlowCursor className="" />
 
-      <main className="@container w-[95%] mx-auto max-w-5xl self-center ">
+      <main className="@container w-[95%] mx-auto max-w-6xl self-center ">
 
         {/* About and Experiences */}
-        <SectionLayout className="flex flex-wrap lg:flex">
+        <SectionLayout className="flex flex-wrap md:flex md:mt-50">
           <div id="#experiences" className=" gap-10 
           flex flex-wrap lg:flex-nowrap lg:justify-center">
             <About className="max-w-2xl text-balance"/>
