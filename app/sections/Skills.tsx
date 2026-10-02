@@ -3,6 +3,7 @@ import { cn } from '@/lib/utils';
 import { HoverCard, HoverCardTrigger, HoverCardContent } from '@/components/ui/hover-card';
 import Info from './Info.json';
 import {Button} from "@/components/ui/button";
+import CardLayout from "../components/Cardlayout";
 type applications = {
     context?: string;
     description?: string;
@@ -36,12 +37,14 @@ const Skills = ({ className, children }: { className?: string; children?: React.
                     <HoverCardContent side="top" align="start" className="max-w-xs">
                         {
                             apps.map((app, index) => (
-                                <div className="space-y-1" key={index}>
-                                    <p className="font-medium text-foreground">{app.context}</p>
-                                    {app?.description ? (
-                                        <p className="text-xs text-muted-foreground">{app.description}</p>
-                                    ) : null}
-                                </div>
+                                <CardLayout>
+                                    <div className="space-y-1" key={index}>
+                                        <p className="font-medium text-foreground">{app.context}</p>
+                                        {app?.description ? (
+                                            <p className="text-xs text-muted-foreground">{app.description}</p>
+                                        ) : null}
+                                    </div>
+                                </CardLayout>
                             ))
                         }
                     </HoverCardContent>

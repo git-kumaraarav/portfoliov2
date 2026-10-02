@@ -75,7 +75,9 @@ const sections = {
 
 function Navbar({ className }: { className?: string }) {
   return (
-    <div className={cn('flex flex-row justify-between px-4 py-3 w-full max-w-6xl bg-primary rounded-xl mx-auto my-2', className)}>
+    <div className={cn('flex flex-row justify-between px-4 py-3 w-full max-w-6xl bg-primary rounded-xl mx-auto my-2', 
+      "shadow-lg shadow-surface/50", 
+    className)}>
       {/* Logo */}
       <NavButton.logo></NavButton.logo>
 

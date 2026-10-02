@@ -110,23 +110,23 @@
     {
       "title": "CS50x: Introduction to Computer Science & Web Programming",
       "issuer": "Harvard University",
-      "link": "",
-      "defaultImage": "",
-      "selectedImage": ""
+      "link": "https://certificates.cs50.io/ec42d5ee-aa1b-476e-9de0-60e71cd4b58b.pdf?size=letter",
+      "defaultImage": "certificates/CS50.png",
+      "selectedImage": "certificates/CS50.png"
     },
     {
       "title": "Data Science & Core ML: Introduction & Intermediate Machine Learning",
       "issuer": "Kaggle",
-      "link": "",
-      "defaultImage": "",
-      "selectedImage": ""
+      "link": "https://www.kaggle.com/learn/certification/kumaraarav/intermediate-machine-learning",
+      "defaultImage": "certificates/Kaggle.png",
+      "selectedImage": "certificates/Kaggle.png"
     },
     {
       "title": "Develop GenAI Apps with Gemini and Streamlit",
       "issuer": "Google Cloud",
-      "link": "",
-      "defaultImage": "",
-      "selectedImage": ""
+      "link": "https://www.cloudskillsboost.google/public_profiles/dbb5ba6c-f879-4cee-bb44-1cad2ef73cbb/badges/8882943?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share",
+      "defaultImage": "certificates/GCloud.png",
+      "selectedImage": "certificates/GCloud.png"
     }
   ], 
 
@@ -143,12 +143,12 @@
         {
           "context": "Whatbytes (Internship)",
           "description": "Architected and optimized production RESTful APIs using Python, Django, and DRF.",
-          "link": ""
+          "link": "https://www.whatbytes.com/"
         },
         {
           "context": "Bachelors Store (Project)",
           "description": "Developed a scalable digital marketplace backend for product catalog parsing and cart persistence using Python, Django, and DRF.",
-          "link": ""
+          "link": "https://bachelorsstore.onrender.com/"
         },
         {
           "context": "Blood Network (Project)",

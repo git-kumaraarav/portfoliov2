@@ -25,7 +25,7 @@ export default function Home() {
       <Navbar className="sticky top-4 z-40 w-[95%] bg-surface" />
       <GlowCursor className="" />
 
-      <main className="@container w-[95%] mx-auto max-w-5xl">
+      <main className="@container w-[95%] mx-auto max-w-5xl self-center ">
 
         {/* About and Experiences */}
         <SectionLayout className="flex flex-wrap lg:flex">

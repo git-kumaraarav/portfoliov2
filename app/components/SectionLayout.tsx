@@ -18,7 +18,7 @@ const SectionLayout = ({
         className,
       )}
     >
-        <h2 className={`{sectionName ? 'hidden' : 'block'} text-3xl m-2 font-bold`}>{sectionName}</h2>  
+        <h2 className={`${sectionName !== undefined ? 'block' : 'hidden'} text-3xl m-2 font-bold`}>{sectionName}</h2>  
         {children}
     </div>
   );

@@ -222,7 +222,7 @@ export default function AnalogDial({ className, projects, onActiveChange }: Anal
       {/* 3D Wheel Container */}
       <div 
         ref={containerRef}
-        className="relative w-full max-w-2xl h-[500px] flex items-center justify-center cursor-grab active:cursor-grabbing touch-none focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400 focus-visible:ring-offset-8 focus-visible:ring-offset-zinc-50 dark:focus-visible:ring-offset-zinc-950 rounded-xl"
+        className="relative w-full max-w-2xl h-[500px] flex items-center justify-center cursor-grab active:cursor-grabbing touch-none rounded-xl"
         style={{ perspective: '1200px' }}
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
@@ -278,11 +278,11 @@ export default function AnalogDial({ className, projects, onActiveChange }: Anal
               >
                 {/* Left Analog Tick */}
                 <div 
-                  className={`transition-all duration-300 rounded-full ${
+                  className={`transition-all bg-bg duration-300 rounded-full ${
                     isMajor 
-                      ? 'w-8 md:w-16 h-[2px] bg-zinc-800 dark:bg-zinc-200' 
-                      : 'w-4 md:w-8 h-[1px] bg-zinc-300 dark:bg-zinc-700'
-                  } ${isActive ? 'opacity-100' : 'opacity-30'}`}
+                      ? 'w-8 md:w-16 text-fg h-2' 
+                      : 'w-4 md:w-8 text-fg h-1 '
+                  } ${isActive ? 'opacity-100 ' : 'opacity-30'}`}
                 />
 
                 {/* Typography Container */}
@@ -292,8 +292,8 @@ export default function AnalogDial({ className, projects, onActiveChange }: Anal
                       onClick={() => handleItemClick(projectIndex)}
                       className={`text-xl md:text-xl  tracking-tight transition-all duration-300 focus:outline-none ${
                         isActive 
-                          ? 'text-zinc-900 font-medium dark:text-zinc-50 scale-100' 
-                          : 'text-zinc-600 font-light dark:text-zinc-600 scale-80 cursor-pointer hover:text-zinc-600 dark:hover:text-zinc-400'
+                          ? 'text-fg font-medium scale-100' 
+                          : 'text-fg/40 font-medium scale-70'
                       }`}
                     >
                       {project}
@@ -305,8 +305,8 @@ export default function AnalogDial({ className, projects, onActiveChange }: Anal
                 <div 
                   className={`transition-all duration-300 rounded-full ${
                     isMajor 
-                      ? 'w-8 md:w-16 h-[2px] bg-zinc-800 dark:bg-zinc-200' 
-                      : 'w-4 md:w-8  h-[1px] bg-zinc-300 dark:bg-zinc-700'
+                      ? 'w-8 md:w-16 text-fg h-2' 
+                      : 'w-4 md:w-8 text-fg bg-bg h-1'
                   } ${isActive ? 'opacity-100' : 'opacity-30'}`}
                 />
 
