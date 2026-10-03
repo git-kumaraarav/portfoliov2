@@ -13,7 +13,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
 import React from 'react'
-import { workspaceConfigSchema } from 'shadcn/schema';
 import info from './Info.json'
 import { cn } from 'cn'
 import CardLayout from '@/app/components/Cardlayout';
