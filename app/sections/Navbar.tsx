@@ -60,7 +60,8 @@ NavButton.logo = ({children} : {children?:React.ReactNode}) => {
           onClick={CycleTheme}
           data-theme={Themes[theme]}
           aria-label="Change theme"
-          className="flex flex-row items-center gap-1"
+          className="flex flex-row items-center gap-1 hover:cursor-pointer"
+
         >
         <div className="w-10 h-10 flex item-center rounded-xl ring-1 ring-accent/50 hover:ring-accent/80 transition-all duration-300  ">
           <Image src={`/logos/cat${cats[theme % cats.length]}.svg`} alt="Aarav" width={50} height={50} className="rounded-[20%]" />

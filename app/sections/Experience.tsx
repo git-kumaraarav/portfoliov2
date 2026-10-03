@@ -29,7 +29,7 @@ function TimelineWrapper ({children, step, work} : {children?: React.ReactNode |
         <TimelineSeparator />
         <TimelineContent className="flex min-w-0 flex-col gap-2 text-pretty">
           {work.position && <div className=" text-sm text-fg/70">{work.position}</div>}
-          {/* {work.description && <div className=" mt-2 text-fg/70">{work.description}</div>} */}
+          {work.description && <div className=" mt-2 text-fg/70">{work.description}</div>}
         </TimelineContent>
       </TimelineItem>
     </>

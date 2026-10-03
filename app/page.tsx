@@ -13,6 +13,7 @@ import GlowCursor from "./sections/Cursor";
 import Footer from "./sections/Footer";
 import CardLayout from "./components/Cardlayout";
 import SectionLayout from "./components/SectionLayout";
+import DotField from "@/components/DotField";
 
 export default function Home() {
   const [activeProjectIndex, setActiveProjectIndex] = useState(0);
@@ -22,8 +23,26 @@ export default function Home() {
   return (
     <>
     {/* Navbar */}
-      <Navbar className="sticky top-4 z-40 w-[95%] bg-surface" />
-      <GlowCursor className="-z-10" />
+
+      <div className="absolute top-0 left-0  w-full h-full -z-10 pointer-events-none">
+
+        <DotField
+          dotRadius={1.5}
+          dotSpacing={14}
+          bulgeStrength={80}
+          glowRadius={200}
+          sparkle={false}
+          waveAmplitude={0}
+          cursorRadius={500}
+          cursorForce={0.1}
+          bulgeOnly
+          gradientFrom="var(--color-accent)"
+          gradientTo="var(--color-accent)"
+          glowColor="var(--color-accent)"
+        />
+      </div>
+      <Navbar className="sticky top-4 z-40 w-[95%] bg-surface/90 backdrop-blur-sm " />
+      {/* <GlowCursor className="-z-10" /> */}
 
       <main className="@container w-[95%] mx-auto max-w-6xl self-center ">
 
@@ -81,7 +100,7 @@ export default function Home() {
         </SectionLayout>
 
 
-        <Footer className="my-10 font-bold ring-zinc-200 rounded-xl" />
+        <Footer className="my-10 font-bold rounded-xl" />
 
       </main>
   </>

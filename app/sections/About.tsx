@@ -43,8 +43,8 @@ export default function About({ className }: { className?: string }) {
             {Object.entries(Socials).map(([name, { url, icon }]) => (
               <div key={name}>
                 <Link href={url} target="_blank" rel="noopener noreferrer"> 
-                  <Button size="icon" variant="outline" aria-label={name}>
-                    <FontAwesomeIcon icon={icon} />
+                  <Button size="icon" variant="outline" aria-label={name} className="hover:bg-accent/20 hover:text-accent transition-all duration-300 hover:cursor-pointer">
+                    <FontAwesomeIcon icon={icon}  className=""/>
                   </Button>
                 </Link>
               </div>

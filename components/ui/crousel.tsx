@@ -564,16 +564,16 @@ export function CalendlyCarousel({
                     }}
                     transition={TRANSITION_SPRING}
                     className={cn(
-                      "size-full flex flex-col md:flex-row p-4 sm:p-5 md:p-6 lg:p-7 gap-3 sm:gap-4 md:gap-6",
+                      "size-full flex flex-col p-4 sm:p-5 md:p-6 lg:p-7 gap-3 sm:gap-4 md:gap-6",
                       !isActive && "pointer-events-none"
                     )}
                   >
-                    <div className="flex-1 min-w-0 flex flex-col items-center md:items-start text-center md:text-left justify-between py-1 gap-2 sm:gap-3">
+                    <div className="flex-1 min-w-0 flex flex-col items-center text-center justify-center py-1 gap-2 sm:gap-3">
 
                       <div className="relative w-full min-w-0 my-auto py-1">
                         <span
                           aria-hidden="true"
-                          className="font-serif text-2xl sm:text-3xl lg:text-4xl text-foreground/40 absolute right-full top-0 pr-1 select-none pointer-events-none hidden md:inline"
+                          className="font-serif text-2xl sm:text-3xl lg:text-4xl text-foreground/40 absolute right-full top-0 pr-1 select-none pointer-events-none hidden"
                         >
                           “
                         </span>
@@ -583,15 +583,15 @@ export function CalendlyCarousel({
                         </p>
                       </div>
 
-                      <div className="flex min-w-0 w-full max-w-full overflow-hidden items-center md:items-start justify-center md:justify-start">
-                        <div className="flex flex-col items-center md:items-start min-w-0 max-w-full">
-                          <span className="w-fit inline-flex items-center justify-center rounded-[4px] font-medium py-1 px-2.5 text-[11px] sm:text-xs bg-secondary text-secondary-foreground shrink-0 select-none">
+                      <div className="flex min-w-0 w-full max-w-full overflow-hidden items-center justify-center">
+                        <div className="flex flex-col items-center min-w-0 max-w-full">
+                          <span className="w-fit inline-flex items-center justify-center rounded-[4px] font-medium py-1 px-2.5 text-[11px] sm:text-xs bg-accent/70  text-fg -foreground shrink-0 select-none">
                             <span className="whitespace-nowrap font-semibold">
                               {item.org}
                             </span>
                           </span>
 
-                          <div className="shrink-0 flex items-center justify-center md:justify-start px-3 h-[6px] -my-[1px] text-secondary relative z-10">
+                          <div className="shrink-0 flex items-center justify-center px-3 h-[6px] -my-[1px] text-fg relative z-10">
                             <svg
                               className="block shrink-0 fill-current overflow-visible text-surface"
                               preserveAspectRatio="none"
@@ -603,7 +603,7 @@ export function CalendlyCarousel({
                             </svg>
                           </div>
 
-                          <span className="w-fit inline-flex items-center justify-center rounded-[4px] font-medium py-1 px-2.5 text-[10px] sm:text-xs bg-secondary text-muted-foreground max-w-full select-none">
+                          <span className="w-fit inline-flex items-center justify-center rounded-[4px] font-medium py-1 px-2.5 text-[10px] sm:text-xs bg-accent/70 text-fg/70  max-w-full select-none ">
                             <span
                               title={item.role}
                               className="truncate"
@@ -615,7 +615,7 @@ export function CalendlyCarousel({
                       </div>
                     </div>
 
-                    <div className="relative shrink-0 overflow-hidden rounded-[18px] sm:rounded-[22px] w-full md:w-[clamp(180px,44%,330px)] flex-1 md:flex-initial md:h-full max-h-[220px] md:max-h-none">
+                    <div className="relative shrink-0 overflow-hidden rounded-[18px] sm:rounded-[22px] w-full h-[220px] flex-none max-h-[220px] ">
                       {item.selectedImage && (
                         <Image
                           alt={item.alt || item.org}
@@ -623,8 +623,8 @@ export function CalendlyCarousel({
                           fill
                           unoptimized
                           draggable={false}
-                          style={{ objectFit: "cover" }}
-                          className="size-full object-cover"
+                          style={{ objectFit: "scale-down" }}
+                          className="size-full object-contain"
                         />
                       )}
                     </div>
@@ -659,8 +659,8 @@ export function CalendlyCarousel({
               className={cn(
                 "h-[8px] rounded-[3px] overflow-hidden border-0 p-0 cursor-pointer transition-[width] duration-300 ease-out outline-none focus-visible:ring-2 focus-visible:ring-ring ",
                 isSelected
-                  ? "w-[80px] bg-secondary"
-                  : "w-[8px] bg-secondary hover:bg-muted-foreground/30"
+                  ? "w-[80px] bg-accent"
+                  : "w-[8px] bg-accent hover:bg-muted-foreground/30"
               )}
             >
               {isSelected && (
