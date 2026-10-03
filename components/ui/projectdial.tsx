@@ -217,12 +217,12 @@ export default function AnalogDial({ className, projects, onActiveChange }: Anal
   }
 
   return (
-    <div className={cn("flex flex-col rounded-lg dark:bg-zinc-950 items-center justify-center font-sans text-zinc-900 dark:text-zinc-50 overflow-hidden select-none", className)}>
+    <div className={cn("flex flex-col rounded-lg items-center justify-center font-sans overflow-hidden select-none", className)}>
       
       {/* 3D Wheel Container */}
       <div 
         ref={containerRef}
-        className="relative w-full max-w-2xl h-[500px] flex items-center justify-center cursor-grab active:cursor-grabbing touch-none rounded-xl"
+        className="relative w-full h-[500px] flex items-center justify-center cursor-grab active:cursor-grabbing touch-none rounded-xl"
         style={{ perspective: '1200px' }}
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}

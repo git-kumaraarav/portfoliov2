@@ -23,9 +23,10 @@ export default function Home() {
     <>
     {/* Navbar */}
       <Navbar className="sticky top-4 z-40 w-[95%] bg-surface" />
-      <GlowCursor className="" />
+      <GlowCursor className="-z-10" />
 
       <main className="@container w-[95%] mx-auto max-w-6xl self-center ">
+
 
         {/* About and Experiences */}
         <SectionLayout className="flex flex-wrap md:flex md:mt-50">
@@ -69,7 +70,7 @@ export default function Home() {
 
         <SectionLayout id="skills" sectionName="Skills">
           <CardLayout>
-            <Skills className=""></Skills>
+            <Skills className= ""></Skills>
           </CardLayout>
         </SectionLayout>
 

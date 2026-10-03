@@ -25,7 +25,7 @@ const Skills = ({ className, children }: { className?: string; children?: React.
         }
     }
   return (
-    <div className={cn('flex flex-row flex-wrap p-4 gap-4', className)}>
+    <div className={cn('flex flex-row flex-wrap p-4 gap-4 ', className)}>
 
         {
             [...skillMap].map(([skill, apps], index) => {
@@ -43,7 +43,7 @@ const Skills = ({ className, children }: { className?: string; children?: React.
                                         {app?.description ? (
                                             <p className="text-xs text-muted-foreground">{app.description}</p>
                                         ) : null}
-                                    </div>
+                                    </div>  
                                 </CardLayout>
                             ))
                         }

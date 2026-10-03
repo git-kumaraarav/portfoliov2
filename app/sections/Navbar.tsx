@@ -17,7 +17,7 @@ import {
 
 import React from "react";
 
-const Themes = ['indigo', 'paper', 'midnight', 'mono', 'sunset'];
+const Themes = [ "pickle", "ocean", "cassette", "matcha", "lemon", "arcade", "sunset", "mono", "indigo", "paper", "midnight" ]
 
 function NavButton({ children, href}: { children?: React.ReactNode; href: string}) {
   return (
@@ -53,7 +53,7 @@ NavButton.logo = ({children} : {children?:React.ReactNode}) => {
     localStorage.setItem('theme', theme.toString());
   }, [loaded, theme]);
 
-
+  const cats = [1, 2, 3, 4, 5]
   return <div className="flex flex-row items-center gap-1">
         <button
           type="button"
@@ -63,7 +63,7 @@ NavButton.logo = ({children} : {children?:React.ReactNode}) => {
           className="flex flex-row items-center gap-1"
         >
         <div className="w-10 h-10 flex item-center rounded-xl ring-1 ring-accent/50 hover:ring-accent/80 transition-all duration-300  ">
-          <Image src={`/logos/cat${theme+1}.svg`} alt="Aarav" width={50} height={50} className="rounded-[20%]" />
+          <Image src={`/logos/cat${cats[theme % cats.length]}.svg`} alt="Aarav" width={50} height={50} className="rounded-[20%]" />
         </div>
           <div className="hidden md:block">@kumaraarav</div>
         </button>
@@ -95,7 +95,7 @@ function Navbar({ className }: { className?: string }) {
       <div className="flex flex-row gap-4 items-center">
           {Object.entries(sections).map(([key, Icon], i) => 
           <NavButton href={`#${key.toLowerCase()}`} key={i}>
-            <NavButton.icon><FontAwesomeIcon icon={Icon}/></NavButton.icon>
+            <NavButton.icon><FontAwesomeIcon icon={Icon} className="text-accent" /></NavButton.icon>
             <NavButton.text>{key}</NavButton.text>
           </NavButton>
            )} 

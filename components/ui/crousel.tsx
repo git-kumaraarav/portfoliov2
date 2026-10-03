@@ -213,7 +213,7 @@ export function CalendlyCarousel({
         id="carousel-view-panel"
         role="tabpanel"
         aria-live="polite"
-        className="relative w-full flex items-center justify-center"
+        className="relative w-full flex items-center justify-center text-fg/70 "
         style={{ height: activeDimensions.height }}
       >
         {VISIBLE_OFFSETS.map((offset) => {
@@ -430,7 +430,7 @@ export function CalendlyCarousel({
                 willChange: "transform",
               }}
               className={cn(
-                "rounded-[28px] sm:rounded-[32px] bg-card text-card-foreground shadow-[0_10px_30px_rgba(95,109,119,0.08),0_4px_12px_rgba(95,109,119,0.06)] dark:shadow-[0_10px_30px_rgba(0,0,0,0.6),0_4px_12px_rgba(0,0,0,0.4)] overflow-visible",
+                "rounded-[28px] sm:rounded-[32px] bg-bg shadow-[0_10px_30px_rgba(95,109,119,0.08),0_4px_12px_rgba(95,109,119,0.06)] dark:shadow-[0_10px_30px_rgba(0,0,0,0.6),0_4px_12px_rgba(0,0,0,0.4)] overflow-visible",
                 !isActive && "cursor-pointer"
               )}
             >
@@ -448,7 +448,7 @@ export function CalendlyCarousel({
                   <svg
                     viewBox="0 0 20 37.3338"
                     preserveAspectRatio="none"
-                    className="size-full fill-current overflow-visible block"
+                    className="size-full fill-current overflow-visible block text-surface"
                   >
                     <path d="M0 0C0 0 1.2422 13.5759 10 13.5759C18.7578 13.5759 20 0 20 0V37.3338C20 37.3338 18.7578 23.7578 10 23.7578C1.2422 23.7578 0 37.3338 0 37.3338V0Z" />
                   </svg>
@@ -469,7 +469,7 @@ export function CalendlyCarousel({
                   <svg
                     viewBox="0 0 20 37.3338"
                     preserveAspectRatio="none"
-                    className="size-full fill-current overflow-visible block"
+                    className="size-full fill-current overflow-visible block text-surface"
                   >
                     <path d="M0 0C0 0 1.2422 13.5759 10 13.5759C18.7578 13.5759 20 0 20 0V37.3338C20 37.3338 18.7578 23.7578 10 23.7578C1.2422 23.7578 0 37.3338 0 37.3338V0Z" />
                   </svg>
@@ -490,7 +490,7 @@ export function CalendlyCarousel({
                   <svg
                     viewBox="0 0 16 28"
                     preserveAspectRatio="none"
-                    className="size-full fill-current overflow-visible block"
+                    className="size-full fill-current overflow-visible block text-surface"
                   >
                     <path d="M0 0C0 0 0.993759 10.1818 8 10.1818C15.0062 10.1818 16 0 16 0V28C16 28 15.0062 17.8182 8 17.8182C0.993759 17.8182 0 28 0 28V0Z" />
                   </svg>
@@ -511,7 +511,7 @@ export function CalendlyCarousel({
                   <svg
                     viewBox="0 0 16 28"
                     preserveAspectRatio="none"
-                    className="size-full fill-current overflow-visible block"
+                    className="size-full fill-current overflow-visible block text-surface"
                   >
                     <path d="M0 0C0 0 0.993759 10.1818 8 10.1818C15.0062 10.1818 16 0 16 0V28C16 28 15.0062 17.8182 8 17.8182C0.993759 17.8182 0 28 0 28V0Z" />
                   </svg>
@@ -593,7 +593,7 @@ export function CalendlyCarousel({
 
                           <div className="shrink-0 flex items-center justify-center md:justify-start px-3 h-[6px] -my-[1px] text-secondary relative z-10">
                             <svg
-                              className="block shrink-0 fill-current overflow-visible"
+                              className="block shrink-0 fill-current overflow-visible text-surface"
                               preserveAspectRatio="none"
                               viewBox="0 -2 14 12"
                               width="14"
@@ -615,7 +615,7 @@ export function CalendlyCarousel({
                       </div>
                     </div>
 
-                    <div className="relative shrink-0 overflow-hidden rounded-[18px] sm:rounded-[22px] bg-muted w-full md:w-[clamp(180px,44%,330px)] flex-1 md:flex-initial md:h-full max-h-[220px] md:max-h-none">
+                    <div className="relative shrink-0 overflow-hidden rounded-[18px] sm:rounded-[22px] w-full md:w-[clamp(180px,44%,330px)] flex-1 md:flex-initial md:h-full max-h-[220px] md:max-h-none">
                       {item.selectedImage && (
                         <Image
                           alt={item.alt || item.org}
@@ -657,7 +657,7 @@ export function CalendlyCarousel({
               aria-label={`Use case ${idx + 1}`}
               tabIndex={isSelected ? 0 : -1}
               className={cn(
-                "h-[8px] rounded-[3px] overflow-hidden border-0 p-0 cursor-pointer transition-[width] duration-300 ease-out outline-none focus-visible:ring-2 focus-visible:ring-ring",
+                "h-[8px] rounded-[3px] overflow-hidden border-0 p-0 cursor-pointer transition-[width] duration-300 ease-out outline-none focus-visible:ring-2 focus-visible:ring-ring ",
                 isSelected
                   ? "w-[80px] bg-secondary"
                   : "w-[8px] bg-secondary hover:bg-muted-foreground/30"

@@ -4,23 +4,23 @@ import Link from 'next/link'
 import { cn } from '@/lib/utils' // Updated import path for cn utility
 import { Button } from '@/components/ui/button'
 import { 
-  FaLinkedin, 
-  FaGithub, 
-  FaTwitter, 
-  FaCode, 
-  FaInstagram 
-} from 'react-icons/fa6'
+  faLinkedin, 
+  faGithub, 
+  faTwitter, 
+  faInstagram 
+}  from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 interface SocialItem {
   url: string
-  icon: React.ReactNode
+  icon: typeof faLinkedin 
 }
 
 const Socials: Record<string, SocialItem> = {
-  Linkedin: { url: "https://www.linkedin.com/in/kumaraarav/", icon: <FaLinkedin /> },
-  Github: { url: "https://github.com/git-kumaraarav", icon: <FaGithub /> },
-  Twitter: { url: "https://twitter.com/kumaraaravX", icon: <FaTwitter /> },
-  Leetcode: { url: "https://leetcode.com/leet-kumaraarav", icon: <FaCode /> },
+  Linkedin: { url: "https://www.linkedin.com/in/kumaraarav/", icon: faLinkedin},
+  Github: { url: "https://github.com/git-kumaraarav", icon: faGithub },
+  Twitter: { url: "https://twitter.com/kumaraaravX", icon: faTwitter },
+  Leetcode: { url: "https://leetcode.com/leet-kumaraarav", icon: faGithub },
 }
 
 export default function About({ className }: { className?: string }) {
@@ -44,7 +44,7 @@ export default function About({ className }: { className?: string }) {
               <div key={name}>
                 <Link href={url} target="_blank" rel="noopener noreferrer"> 
                   <Button size="icon" variant="outline" aria-label={name}>
-                    {icon}
+                    <FontAwesomeIcon icon={icon} />
                   </Button>
                 </Link>
               </div>

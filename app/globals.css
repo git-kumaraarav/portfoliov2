@@ -55,6 +55,55 @@
   --secondary: #f43f5e;
 }
 
+[data-theme="arcade"] {
+  --bg: #1b1034;
+  --surface: #2a1b4d;
+  --fg: #fff1fb;
+  --accent: #ff5ec4;
+  --secondary: #5cf2e1;
+}
+ 
+[data-theme="lemon"] {
+  --bg: #fffbe6;
+  --surface: #ffffff;
+  --fg: #2b2a33;
+  --accent: #ff6b35;
+  --secondary: #3a86ff;
+}
+ 
+[data-theme="matcha"] {
+  --bg: #f3f6e8;
+  --surface: #ffffff;
+  --fg: #263322;
+  --accent: #4f7d1f;
+  --secondary: #e58f65;
+}
+ 
+[data-theme="cassette"] {
+  --bg: #231815;
+  --surface: #33241e;
+  --fg: #fdebd0;
+  --accent: #ff7a59;
+  --secondary: #f7c548;
+}
+ 
+[data-theme="ocean"] {
+  --bg: #062a3b;
+  --surface: #0b3c52;
+  --fg: #e8fbff;
+  --accent: #ff8fab;
+  --secondary: #ffd166;
+}
+ 
+[data-theme="pickle"] {
+  --bg: #0a0f0a;
+  --surface: #141c14;
+  --fg: #eafbe7;
+  --accent: #b6ff3b;
+  --secondary: #ff4fd8;
+}
+
+
 @layer base {
   body {
     background-color: var(--color-bg);
