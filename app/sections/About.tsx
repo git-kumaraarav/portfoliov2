@@ -18,10 +18,10 @@ interface SocialItem {
 }
 
 const Socials: Record<string, SocialItem> = {
-  Linkedin: { url: "https://www.linkedin.com/in/kumaraarav/", icon: faLinkedin},
-  Github: { url: "https://github.com/git-kumaraarav", icon: faGithub },
-  Twitter: { url: "https://twitter.com/kumaraaravX", icon: faTwitter },
-  Leetcode: { url: "https://leetcode.com/leet-kumaraarav", icon: faGithub },
+  Linkedin: { url: info.basics.profiles.linkedin, icon: faLinkedin},
+  Github: { url: info.basics.profiles.github, icon: faGithub },
+  Twitter: { url: info.basics.profiles.x, icon: faTwitter },
+  Leetcode: { url: info.basics.profiles.leetcode, icon: faGithub },
 }
 
 export default function About({ className }: { className?: string }) {
@@ -30,7 +30,7 @@ export default function About({ className }: { className?: string }) {
       <div className="flex flex-row gap-4 max-w-xl p-3">
         <Image 
           src="/profile.jpg" 
-          alt="Aarav Kumar" 
+          alt={`${info.basics.name}`} 
           width={100} 
           height={100} 
           className="rounded-lg object-cover"
