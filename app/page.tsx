@@ -28,14 +28,14 @@ export default function Home() {
       <div className="absolute top-0 left-0  w-full h-full -z-10 pointer-events-none">
 
         <DotField
-          dotRadius={1.5}
-          dotSpacing={50}
-          bulgeStrength={80}
-          glowRadius={200}
-          sparkle={false}
+          dotRadius={2}
+          dotSpacing={80}
+          bulgeStrength={0.1}
+          glowRadius={150}
+          sparkle={true}
           waveAmplitude={0}
-          cursorRadius={500}
-          cursorForce={0.1}
+          cursorRadius={10}
+          cursorForce={0.0001}
           bulgeOnly
           gradientFrom="var(--color-accent)"
           gradientTo="var(--color-accent)"
