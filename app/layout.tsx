@@ -30,8 +30,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={cn("antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable, "scroll-smooth", "scrollbar-thin scrollbar-thumb-accent/50" )}
     >
         <body className="relative " >
-
-          <Loader>{children}</Loader>
+          {children}
+          {/* <Loader></Loader> */}
         </body>
     </html>
   );
