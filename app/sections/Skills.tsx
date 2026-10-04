@@ -7,6 +7,7 @@ import CardLayout from "../components/Cardlayout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare, faCode } from "@fortawesome/free-solid-svg-icons";
 import { Separator } from "@base-ui/react";
+import Image from "next/image"; 
 
 type applications = {
     context?: string;
@@ -35,17 +36,17 @@ const Skills = ({ className, children }: { className?: string; children?: React.
         { 
            skillsApplied.map((category) => {
             return (
-            <CardLayout className="flex flex-col rounded-xl border border-accent/20 bg-surface w-fit ">
-                <h2 className="text-lg text-accent">{category.category}</h2>
-                <Separator className="my-2 h-px w-full bg-secondary/10" />
-                <div className="flex flex-row flex-wrap gap-2">
-                { category.technologies.map((tech, index) => {
-                    return (
-                        <Skill category={category} tech={tech} index={index} />
-                    )
-                })}
-                </div>
-            </CardLayout>
+                <CardLayout className="relative flex flex-col rounded-xl border border-accent/20 bg-surface w-fit ">
+                    <h2 className="text-lg text-accent">{category.category}</h2>
+                    <Separator className="my-2 h-px w-full bg-secondary/10" />
+                    <div className="flex flex-row flex-wrap gap-2">
+                    { category.technologies.map((tech, index) => {
+                        return (
+                            <Skill category={category} tech={tech} index={index} />
+                        )
+                    })}
+                    </div>
+                </CardLayout>
             )}) 
         }
     </div>

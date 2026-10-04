@@ -6,13 +6,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, faLinkedin, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import info from "./Info.json";
+import Image from "next/image";
 
 const profiles = info.basics.profiles;
+const contact = info.basics.contact;
 
 const Contact = ({ className }: { className?: string }) => {
   return (
     <CardLayout
-      className={cn("flex flex-col ", 
+      className={cn("relative flex flex-col ", 
         className
       )}
     >
@@ -28,7 +30,7 @@ const Contact = ({ className }: { className?: string }) => {
                 >
                     <div className="flex flex-col justify-center items-center gap-1">
                         <FontAwesomeIcon icon={faEnvelope} />
-                        <span className="text-sm">work.kumaraarav@gmail.com</span>
+                        <span className="text-sm">{contact.email}</span>
                     </div>
                 </Link>
                 <Link
@@ -38,7 +40,7 @@ const Contact = ({ className }: { className?: string }) => {
                 >
                     <div className="flex flex-col justify-center items-center gap-1">
                         <FontAwesomeIcon icon={faWhatsapp} />
-                        <span className="text-sm">+91 7634069202</span>
+                        <span className="text-sm">{contact.phone}</span>
                     </div>
                 </Link>
             </div> 
@@ -55,7 +57,7 @@ const Contact = ({ className }: { className?: string }) => {
                 >
                     <div className="flex flex-col justify-center items-center gap-1">
                         <FontAwesomeIcon icon={faInstagram} />
-                        <span className="text-sm">@ig.kumar.aarav</span>
+                        <span className="text-sm">{contact.instagram}</span>
                     </div>
                 </Link>
                 <Link
@@ -65,7 +67,7 @@ const Contact = ({ className }: { className?: string }) => {
                 >
                     <div className="flex flex-col justify-center items-center gap-1">
                         <FontAwesomeIcon icon={faLinkedin} />
-                        <span className="text-sm">in/kumaraarav</span>
+                        <span className="text-sm">{contact.linkedin}</span>
                     </div>
                 </Link>
                 <Link
@@ -75,7 +77,7 @@ const Contact = ({ className }: { className?: string }) => {
                 >
                     <div className="flex flex-col justify-center items-center gap-1">
                         <FontAwesomeIcon icon={faTwitter} />
-                        <span className="text-sm">@kumaraaravX</span>
+                        <span className="text-sm">{contact.x}</span>
                     </div>
                 </Link>
             </div>
@@ -84,5 +86,7 @@ const Contact = ({ className }: { className?: string }) => {
 
     </CardLayout>
   )}
+
+
 
   export default Contact;
