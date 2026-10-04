@@ -29,7 +29,7 @@ function NavButton({ children, href}: { children?: React.ReactNode; href: string
 }
 
 NavButton.logo = ({children} : {children?:React.ReactNode}) => {
-  const [theme, setTheme] = React.useState(0);
+  const [theme, setTheme] = React.useState(4);
   const [loaded, setLoaded] = React.useState(false);
 
   const CycleTheme = () => {

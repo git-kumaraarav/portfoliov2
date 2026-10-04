@@ -39,7 +39,7 @@ const Skills = ({ className, children }: { className?: string; children?: React.
                 <CardLayout className="relative flex flex-col rounded-xl border border-accent/20 bg-surface w-fit " key={category.category}>
                     <h2 className="text-lg text-accent">{category.category}</h2>
                     <Separator className="my-2 h-px w-full bg-secondary/10" />
-                    <div className="flex flex-row flex-wrap gap-2">
+                    <div className="flex flex-row flex-wrap gap-2 justify-between">
                     { category.technologies.map((tech, index) => {
                         return (
                             <Skill category={category} tech={tech} index={index} key={`${tech}-${index}`} />
