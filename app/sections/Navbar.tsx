@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {cn} from '@/lib/utils'
 import { useEffect } from "react";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -63,8 +64,16 @@ NavButton.logo = ({children} : {children?:React.ReactNode}) => {
           className="flex flex-row items-center gap-1 hover:cursor-pointer"
 
         >
-        <div className="w-10 h-10 flex item-center rounded-xl ring-1 ring-accent/50 hover:ring-accent/80 transition-all duration-300  ">
-          <Image src={`/logos/cat${cats[theme % cats.length]}.svg`} alt="Aarav" width={50} height={50} className="rounded-[20%]" />
+        <div className="w-10 h-10 flex item-center rounded-xl ring-1 ring-accent/50 hover:ring-accent/80 transition-all duration-300">
+
+        <Tooltip>
+          <TooltipTrigger>
+            <Image src={`/logos/cat${cats[theme % cats.length]}.svg`} alt="Aarav" width={50} height={50} className="rounded-[20%] hover:cursor-pointer " />
+          </TooltipTrigger>
+          <TooltipContent>
+            <p className="text-sm bg-accent rounded p-2">Meeeeeooooowwww, colors? </p>
+          </TooltipContent>
+        </Tooltip>
         </div>
           <div className="hidden md:block">@kumaraarav</div>
         </button>

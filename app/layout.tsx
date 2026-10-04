@@ -5,6 +5,8 @@ import { cn } from "@/lib/utils";
 import React from "react";
 import Loader  from "@/app/components/Loading";
 
+import { TooltipProvider } from "@/components/ui/tooltip"
+
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
 const geistSans = Geist({
@@ -30,7 +32,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={cn("antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable, "scroll-smooth", "scrollbar-thin scrollbar-thumb-accent/50" )}
     >
         <body className="relative " >
-          {children}
+          <TooltipProvider>{children}</TooltipProvider>
           {/* <Loader></Loader> */}
         </body>
     </html>
