@@ -14,6 +14,7 @@ import Footer from "./sections/Footer";
 import CardLayout from "./components/Cardlayout";
 import SectionLayout from "./components/SectionLayout";
 import DotField from "@/components/DotField";
+import Contact from "./sections/Contact";
 
 export default function Home() {
   const [activeProjectIndex, setActiveProjectIndex] = useState(0);
@@ -28,7 +29,7 @@ export default function Home() {
 
         <DotField
           dotRadius={1.5}
-          dotSpacing={14}
+          dotSpacing={50}
           bulgeStrength={80}
           glowRadius={200}
           sparkle={false}
@@ -41,7 +42,7 @@ export default function Home() {
           glowColor="var(--color-accent)"
         />
       </div>
-      <Navbar className="sticky top-4 z-40 w-[95%] bg-surface/90 backdrop-blur-sm " />
+      <Navbar className="sticky top-4 z-40 w-[95%] bg-surface/50 backdrop-blur-sm border-surface border" />
       {/* <GlowCursor className="-z-10" /> */}
 
       <main className="@container w-[95%] mx-auto max-w-6xl self-center ">
@@ -52,7 +53,7 @@ export default function Home() {
           <div id="#experiences" className=" gap-10 
           flex flex-wrap lg:flex-nowrap lg:justify-center">
             <About className="max-w-2xl text-balance"/>
-            <Experience className="flex flex-col bg-surface rounded-xl p-4 "/> 
+            <Experience className="flex flex-col bg-surface/50 rounded-xl p-8 backdrop-blur-lg border border-surface hover:scale-101 transition-all transition-300"/> 
           </div>
         </SectionLayout>
 
@@ -99,6 +100,9 @@ export default function Home() {
           </CardLayout>
         </SectionLayout>
 
+        <SectionLayout id="contact" sectionName="Contact">
+          <Contact className=""></Contact>
+        </SectionLayout>
 
         <Footer className="my-10 font-bold rounded-xl" />
 

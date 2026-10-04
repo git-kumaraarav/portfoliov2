@@ -14,7 +14,10 @@
       "github": "https://github.com/git-kumaraarav",
       "leetcode": "https://leetcode.com/leet-kumaraarav",
       "takeuforward": "https://takeuforward.org/profile/darkice",
-      "x": "https://twitter.com/kumaraaravX"
+      "x": "https://twitter.com/kumaraaravX", 
+      "mail": "mailto:work.kumaraarav@gmail.com", 
+      "instagram": "https://www.instagram.com/ig.kumar.aarav/", 
+      "whatsapp": "https://wa.me/+917634069202" 
     },
     "headline": "Fascinated with Linux and Open Source Softwares | CS50x | CS50w"
   },
@@ -22,7 +25,7 @@
   "work": [
     {
       "company": "Freelancer",
-      "position": "Software Engineer | Backend Developer",
+      "position": "Backend Developer",
       "location": "Remote",
       "startDate": "2026-01",
       "endDate": "Current",
@@ -31,7 +34,7 @@
     },
     {
       "company": "ExpertMinds Technologies LLP",
-      "position": "Edge AI / Backend Intern",
+      "position": "Edge AI / Backend",
       "location": "Bilaspur, India (On-site)",
       "startDate": "2025-12",
       "endDate": "2026-05",
@@ -40,7 +43,7 @@
     },
     {
       "company": "Whatbytes",
-      "position": "Backend Development Intern",
+      "position": "Backend Development",
       "location": "Remote",
       "startDate": "2025-05",
       "endDate": "2025-10",
@@ -55,7 +58,7 @@
       "startDate": "2022-12",
       "endDate": "2026-05",
       "description":[
-        "Graduated in IT with good academic standing, focusing on software development and core computer science concepts."
+        "Graduated in IT with good academic standing,  focusing on software development and core computer science concepts."
       ]
     }
   ],

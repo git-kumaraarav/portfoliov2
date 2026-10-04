@@ -39,13 +39,11 @@ function TimelineWrapper ({children, step, work} : {children?: React.ReactNode |
 function Experience({ className }: { className?: string }) {
   const works = info.work 
   return (
-    <CardLayout className={cn("", className)}>
-      <Timeline className={cn("mx-auto w-full min-w-0 max-w-xl wrap-break-word")}>
+      <Timeline className={cn("mx-auto w-full min-w-0 max-w-xl wrap-break-word",  className)}>
         {works.map((work, index) => (
-          <TimelineWrapper key={index} work={work} step={1}></TimelineWrapper>
+          <TimelineWrapper key={index} work={work} step={index+1}></TimelineWrapper>
         )) }
       </Timeline>
-    </CardLayout>
   )
 }
 
