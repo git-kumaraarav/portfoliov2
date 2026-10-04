@@ -20,7 +20,7 @@ const Contact = ({ className }: { className?: string }) => {
 
         <div className="flex flex-col gap-2 items-start justify-start">
             <h2 className="text-lg font-bold text-accent">Contact Me</h2>
-            <div className="flex gap-2 indent-10">
+            <div className="flex gap-2 flex-wrap indent-10">
                 <Link 
                     href={profiles.mail}
                     className="text-fg hover:text-accent/80"
@@ -47,7 +47,7 @@ const Contact = ({ className }: { className?: string }) => {
         
         <div className="flex flex-col gap-2 justify-start items-start">
             <h2 className="text-lg font-bold text-accent ">Follow me on socials</h2>
-            <div className="flex gap-5 indent-10">
+            <div className="flex flex-wrap gap-5 indent-10">
                 <Link
                     href={profiles.instagram}
                     className="text-fg hover:text-accent/80"
