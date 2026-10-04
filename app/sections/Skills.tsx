@@ -31,14 +31,14 @@ const Skills = ({ className, children }: { className?: string; children?: React.
   const skillsApplied = (Info as { skillsApplied: SkillCategory[] }).skillsApplied;
 
   return (
-    <div className={cn('flex flex-row  p-4 gap-4 flex-wrap justify-center items-center', className)}>
+    <div className={cn('flex flex-row p-4 gap-1 flex-wrap justify-center items-center', className)}>
         { 
            skillsApplied.map((category) => {
             return (
             <CardLayout className="flex flex-col rounded-xl border border-accent/20 bg-surface w-fit ">
                 <h2 className="text-lg text-accent">{category.category}</h2>
                 <Separator className="my-2 h-px w-full bg-secondary/10" />
-                <div className="flex flex-row flex-wrap gap-2 w-sm">
+                <div className="flex flex-row flex-wrap gap-2">
                 { category.technologies.map((tech, index) => {
                     return (
                         <Skill category={category} tech={tech} index={index} />
