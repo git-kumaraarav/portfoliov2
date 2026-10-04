@@ -1,7 +1,9 @@
 {
+  "resume": "https://drive.google.com/file/d/151OOgKGgri2Ed3UYrJae5hYBR05k90B1/view?usp=sharing",
   "basics": {
     "name": "Kumar Aarav",
-    "label": "Software Engineer | Backend Developer",
+    "title": "Software Engineer",
+    "description": "Hi there 👋, I'm Kumar Aarav, a passionate Software Engineer and Backend Developer with a strong focus on building custom scalable systems and software for businesses.",
     "email": "work.kumaraarav@gmail.com",
     "phone": "+91 7634069202",
     "location": {
@@ -67,7 +69,9 @@
       "name": "Blood Network",
       "oneliner": "Full-Stack Healthcare Platform",
       "technologies": ["Django", "Bootstrap", "PostgreSQL", "Render"],
-      "video": "_qzU0mb7Ubw",
+      "link": "https://blood-network.onrender.com/",
+      "source": "https://github.com/git-kumaraarav/Blood-Network",
+      "video": "",
       "description": [
         "Designed a robust transactional database schema mapping interactions between registered blood donors, recipients, and local hospital storage units.",
         "Built localized tracking state machines and real-time backend verification signals, decreasing emergency health centre response time windows."
@@ -77,6 +81,8 @@
       "name": "Bachelors Store",
       "oneliner": "Targeted E-Commerce Platform",
       "technologies": ["Python", "Django", "Django REST Framework", "Web API"],
+      "link": "https://bachelorsstore.onrender.com/",
+      "source": "https://github.com/git-kumaraarav/BachelorsStore",
       "video": "D_3oU-YG9yI",
       "description": [
         "Developed a scalable specialized backend architecture for a digital marketplace, delivering seamless product catalogue parsing and stateful cart persistence."
@@ -86,6 +92,8 @@
       "name": "Project FightFake",
       "oneliner": "Machine Learning News Validator",
       "technologies": ["Flask", "Gemini API", "JavaScript Extension", "NLP"],
+      "link": "",
+      "source": "https://github.com/git-kumaraarav/Project_FightFake",
       "video": "Ls0anHlPjGw",
       "description": [
         "Engineered decoupled, modular backend web services pairing fine-tuned text processing inputs alongside the Gemini API to compute instant credibility indexing."
@@ -104,6 +112,8 @@
       "name": "Glance",
       "oneliner": "Productivity Chrome Extension",
       "technologies": ["JavaScript", "Chrome Extensions API"],
+      "link": "",
+      "source": "https://github.com/git-kumaraarav/Glance-chrome-extension",
       "video": "jQuLJ1nNf1g",
       "description": [
         "Created a custom browser extension for managing daily tasks, tracking weather updates, and displaying motivational quotes directly in the browser."
@@ -144,7 +154,7 @@
 
   "skillsApplied": [
     {
-      "category": "Python & Backend Frameworks",
+      "category": "Backend Engineering",
       "technologies": [
         "Django",
         "Django REST Framework",
@@ -160,24 +170,25 @@
         {
           "context": "Bachelors Store (Project)",
           "description": "Developed a scalable digital marketplace backend for product catalog parsing and cart persistence using Python, Django, and DRF.",
+          "source": "https://github.com/git-kumaraarav/BachelorsStore",
           "link": "https://bachelorsstore.onrender.com/"
         },
         {
           "context": "Blood Network (Project)",
           "description": "Designed a localized tracking and verification backend for a healthcare platform using Django.",
-          "source": "https://github.com/DarkIce000/Project_FightFake", 
+          "source": "https://github.com/git-kumaraarav/Blood-Network",
           "link": "https://blood-network.onrender.com/"
         },
         {
           "context": "Project FightFake (Project)",
           "description": "Engineered modular backend web services using Flask to compute credibility indexing metrics.",
-          "source": "https://github.com/DarkIce000/Project_FightFake", 
-          "link": "https://github.com/DarkIce000/Project_FightFake"
+          "source": "https://github.com/git-kumaraarav/Project_FightFake",
+          "link": ""
         }
       ]
     },
     {
-      "category": "Artificial Intelligence, Machine Learning & NLP",
+      "category": "GenAI & Machine Learning",
       "technologies": [
         "PyTorch",
         "TensorFlow",
@@ -194,6 +205,7 @@
         {
           "context": "Project FightFake (Project)",
           "description": "Integrated fine-tuned text processing inputs with the Gemini API and NLP to instantly validate internet articles.",
+          "source": "https://github.com/git-kumaraarav/Project_FightFake",
           "link": ""
         },
         {
@@ -204,7 +216,7 @@
       ]
     },
     {
-      "category": "Web Scraping, Automation & Task Scheduling",
+      "category": "Web Scraping & Automation",
       "technologies": [
         "Playwright",
         "Selenium",
@@ -225,7 +237,7 @@
       ]
     },
     {
-      "category": "JavaScript & Client-Side Integration",
+      "category": "Frontend Development",
       "technologies": [
         "JavaScript",
         "Chrome Extensions API"
@@ -234,11 +246,13 @@
         {
           "context": "Project FightFake (Project)",
           "description": "Developed the frontend validation interface as a JavaScript Chrome Extension.",
+          "source": "https://github.com/git-kumaraarav/Project_FightFake",
           "link": ""
         },
         {
           "context": "Glance (Project)",
           "description": "Created a custom Chrome extension for daily task management and personalized updates using JavaScript.",
+          "source": "https://github.com/git-kumaraarav/Glance-chrome-extension",
           "link": ""
         }
       ]
@@ -254,12 +268,14 @@
         {
           "context": "Blood Network (Project)",
           "description": "Structured and deployed a robust transactional PostgreSQL database schema on Render to map interactions between donors, recipients, and hospitals.",
-          "link": ""
+          "source": "https://github.com/git-kumaraarav/Blood-Network",
+          "link": "https://blood-network.onrender.com/"
         },
         {
           "context": "Bachelors Store (Project)",
           "description": "Implemented stateful cart persistence mechanisms using relational database structures.",
-          "link": ""
+          "source": "https://github.com/git-kumaraarav/BachelorsStore",
+          "link": "https://bachelorsstore.onrender.com/"
         }
       ]
     },

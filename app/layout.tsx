@@ -26,9 +26,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={cn("antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable, "scroll-smooth")}
+      className={cn("antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable, "scroll-smooth", "scrollbar-thin scrollbar-thumb-accent/50" )}
     >
-        <body className="relative" >
+        <body className="relative " >
 
           {children}
         </body>

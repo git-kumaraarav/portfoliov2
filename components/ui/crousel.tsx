@@ -578,7 +578,7 @@ export function CalendlyCarousel({
                           “
                         </span>
 
-                        <p className="font-serif text-xs sm:text-base md:text-lg text-foreground/85 leading-snug">
+                        <p className="font-serif text-xs leading-snug text-accent sm:text-base md:text-lg">
                           “{item.quote}”
                         </p>
                       </div>
@@ -659,13 +659,13 @@ export function CalendlyCarousel({
               className={cn(
                 "h-[8px] rounded-[3px] overflow-hidden border-0 p-0 cursor-pointer transition-[width] duration-300 ease-out outline-none focus-visible:ring-2 focus-visible:ring-ring ",
                 isSelected
-                  ? "w-[80px] bg-accent"
-                  : "w-[8px] bg-accent hover:bg-muted-foreground/30"
+                  ? "w-[80px] bg-secondary"
+                  : "w-[8px] bg-secondary/30 hover:bg-secondary/60"
               )}
             >
               {isSelected && (
                 <div
-                  className="h-full rounded-[3px] bg-blue-600 dark:bg-blue-500"
+                  className="h-full rounded-[3px] bg-secondary"
                   style={{
                     transformOrigin: "0% 50%",
                     transform: `scaleX(${progress / 100})`,

@@ -292,8 +292,8 @@ export default function AnalogDial({ className, projects, onActiveChange }: Anal
                       onClick={() => handleItemClick(projectIndex)}
                       className={`text-xl md:text-xl  tracking-tight transition-all duration-300 focus:outline-none ${
                         isActive 
-                          ? 'text-fg font-medium scale-100' 
-                          : 'text-fg/40 font-medium scale-70'
+                          ? 'text-accent font-medium scale-100'
+                          : 'text-accent/40 font-medium scale-70'
                       }`}
                     >
                       {project}
@@ -337,22 +337,22 @@ export function StubleIndicator({className, handlePrev, handleNext, visualOffset
       {/* Subtle indicator and Accessible Controls */}
       <div className={cn("absolute top-[50%] left-[-40%] md:bottom-0 md:left-[35%] md:top-[120%] md:rotate-0 md:flex flex-col items-center gap-4 rotate-90", className)}>
         
-        <div className="flex items-center gap-6 bg-zinc-100 dark:bg-zinc-900/50 p-2 rounded-full shadow-sm border border-zinc-200 dark:border-zinc-800/50 backdrop-blur-sm">
+        <div className="flex items-center gap-6 rounded-full border border-secondary/40 bg-surface/80 p-2 shadow-sm backdrop-blur-sm">
           <button 
             onClick={handlePrev}  
-            className="p-1 text-zinc-400 hover:text-zinc-900 dark:text-zinc-500 dark:hover:text-zinc-50 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400 rounded-full bg-white dark:bg-zinc-800/50 shadow-sm"
+            className="rounded-full bg-secondary/10 p-1 text-secondary shadow-sm transition-colors hover:bg-secondary/20 hover:text-fg focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/70"
             aria-label="Previous project"
           >
             <FontAwesomeIcon icon={faChevronUp} className="w-5 h-5" />
           </button>
 
-          <div className="text-sm font-medium text-zinc-500 dark:text-zinc-400 tracking-widest uppercase w-16 text-center" aria-live="polite">
+          <div className="w-16 text-center text-sm font-medium uppercase tracking-widest text-secondary" aria-live="polite">
             {Math.round(visualOffset + 1)} / {projectCount}
           </div>
 
           <button 
             onClick={handleNext}
-            className="p-1 text-zinc-400 hover:text-zinc-900 dark:text-zinc-500 dark:hover:text-zinc-50 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400 rounded-full bg-white dark:bg-zinc-800/50 shadow-sm"
+            className="rounded-full bg-secondary/10 p-1 text-secondary shadow-sm transition-colors hover:bg-secondary/20 hover:text-fg focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/70"
             aria-label="Next project"
           >
             <FontAwesomeIcon icon={faChevronDown} className="w-5 h-5" />

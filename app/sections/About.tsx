@@ -10,6 +10,7 @@ import {
   faInstagram 
 }  from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import info from './Info.json'
 
 interface SocialItem {
   url: string
@@ -35,8 +36,8 @@ export default function About({ className }: { className?: string }) {
           className="rounded-lg object-cover"
         />
         <div className="flex gap-1 flex-col">
-          <h1 className="text-4xl font-medium">Aarav Kumar</h1>
-          <h2 className="text-lg text-muted-foreground">Software Developer</h2>
+          <h1 className="text-4xl font-medium">{info.basics.name}</h1>
+          <h2 className="text-lg text-muted-foreground">{info.basics.title}</h2>
 
           {/* Socials */}
           <div className="flex flex-row gap-2 mt-2">
@@ -55,12 +56,11 @@ export default function About({ className }: { className?: string }) {
 
       <div className="flex flex-col gap-2 p-3">
         <p className="text-muted-foreground text-pretty">
-          Hi, 👋 I am Aarav, a software developer. I love to build things and explore new technologies.
-          I am currently working as a Freelancer building Fullstack and Mobile applications for clients. 
+          {info.basics.description}
         </p> 
         <div className="my-2"></div>
         <p className="text-muted-foreground">
-          Connect with me on socials like <span className="text-accent font-medium">X (formerly Twitter)</span> and <span className="text-accent font-medium">LinkedIn</span>.
+          Connect with me on socials like <Link href={info.basics.profiles.linkedin} target="_blank" rel="noopener noreferrer" className="text-accent font-medium">LinkedIn</Link> and <Link href={info.basics.profiles.x} target="_blank" rel="noopener noreferrer" className="text-accent font-medium">X (formerly Twitter)</Link>
         </p> 
       </div>
     </div>

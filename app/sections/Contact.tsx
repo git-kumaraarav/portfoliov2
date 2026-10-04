@@ -16,24 +16,30 @@ const Contact = ({ className }: { className?: string }) => {
         className
       )}
     >
-        <div className="w-1/3 flex flex-col gap-4 justify-start items-start">
+        <div className="w-fit flex flex-col gap-4 justify-start items-start">
 
         <div className="flex flex-col gap-2 items-start justify-start">
             <h2 className="text-lg font-bold text-accent">Contact Me</h2>
-            <div className="flex gap-5  indent-2">
+            <div className="flex gap-2 indent-10">
                 <Link 
                     href={profiles.mail}
                     className="text-fg hover:text-accent/80"
                     target = "_blank"
                 >
-                    <FontAwesomeIcon icon={faEnvelope} />
+                    <div className="flex flex-col justify-center items-center gap-1">
+                        <FontAwesomeIcon icon={faEnvelope} />
+                        <span className="text-sm">work.kumaraarav@gmail.com</span>
+                    </div>
                 </Link>
                 <Link
                     href={profiles.whatsapp}
                     className="text-fg hover:text-accent/80"
                     target = "_blank"
                 >
-                    <FontAwesomeIcon icon={faWhatsapp} />
+                    <div className="flex flex-col justify-center items-center gap-1">
+                        <FontAwesomeIcon icon={faWhatsapp} />
+                        <span className="text-sm">+91 7634069202</span>
+                    </div>
                 </Link>
             </div> 
 
@@ -41,27 +47,36 @@ const Contact = ({ className }: { className?: string }) => {
         
         <div className="flex flex-col gap-2 justify-start items-start">
             <h2 className="text-lg font-bold text-accent ">Follow me on socials</h2>
-            <div className="flex gap-5 indent-2 ">
+            <div className="flex gap-5 indent-10">
                 <Link
                     href={profiles.instagram}
                     className="text-fg hover:text-accent/80"
                     target = "_blank"
                 >
-                    <FontAwesomeIcon icon={faInstagram} />
+                    <div className="flex flex-col justify-center items-center gap-1">
+                        <FontAwesomeIcon icon={faInstagram} />
+                        <span className="text-sm">@ig.kumar.aarav</span>
+                    </div>
                 </Link>
                 <Link
                     href={profiles.linkedin}
                     className="text-fg hover:text-accent/80"
                     target = "_blank"
                 >
-                    <FontAwesomeIcon icon={faLinkedin} />
+                    <div className="flex flex-col justify-center items-center gap-1">
+                        <FontAwesomeIcon icon={faLinkedin} />
+                        <span className="text-sm">in/kumaraarav</span>
+                    </div>
                 </Link>
                 <Link
                     href={profiles.x}
                     className="text-fg hover:text-accent/80"
                     target = "_blank"
                 >
-                    <FontAwesomeIcon icon={faTwitter} />
+                    <div className="flex flex-col justify-center items-center gap-1">
+                        <FontAwesomeIcon icon={faTwitter} />
+                        <span className="text-sm">@kumaraaravX</span>
+                    </div>
                 </Link>
             </div>
         </div>
