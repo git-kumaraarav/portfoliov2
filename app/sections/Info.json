@@ -72,12 +72,23 @@
   ],
   "projects": [
     {
+      "name": "Portfolio",
+      "oneliner": "Beautifully Designed Personal Portfolio",
+      "technologies": ["Next.js", "TailwindCSS", "TypeScript", "React", "Vercel"],
+      "link": "https://portfolio-five-gray-76.vercel.app/",
+      "source": "https://github.com/git-kumaraarav/portfoliov2",
+      "video": "WaagwYzOu5U",
+      "description": [
+        "Beautifully designed personal portfolio website built with Next.js, TailwindCSS, and TypeScript, showcasing my skills, projects, and experiences in a visually appealing manner."
+      ]
+    }, 
+    {
       "name": "Blood Network",
       "oneliner": "Full-Stack Healthcare Platform",
       "technologies": ["Django", "Bootstrap", "PostgreSQL", "Render"],
       "link": "https://blood-network.onrender.com/",
       "source": "https://github.com/git-kumaraarav/Blood-Network",
-      "video": "",
+      "video": "Ce1kx3wdIuA",
       "description": [
         "Designed a robust transactional database schema mapping interactions between registered blood donors, recipients, and local hospital storage units.",
         "Built localized tracking state machines and real-time backend verification signals, decreasing emergency health centre response time windows."
@@ -108,7 +119,9 @@
     {
       "name": "VaporMedia",
       "oneliner": "Automated AI Tools",
-      "video": "",
+      "video": "Luq2LJw5uyU",
+      "link": "",
+      "source": "",
       "technologies": ["Python", "GenAI", "Web Scraping"],
       "description": [
         "Co-developed core logic for an automated live GenAI news analyst and an automated messaging workflow platform for custom creator outreach."
@@ -118,9 +131,9 @@
       "name": "Glance",
       "oneliner": "Productivity Chrome Extension",
       "technologies": ["JavaScript", "Chrome Extensions API"],
-      "link": "",
+      "link": "oaahBoYXiAk",
       "source": "https://github.com/git-kumaraarav/Glance-chrome-extension",
-      "video": "jQuLJ1nNf1g",
+      "video": "oaahBoYXiAk",
       "description": [
         "Created a custom browser extension for managing daily tasks, tracking weather updates, and displaying motivational quotes directly in the browser."
       ]
