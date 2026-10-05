@@ -77,9 +77,32 @@
       "technologies": ["Next.js", "TailwindCSS", "TypeScript", "React", "Vercel"],
       "link": "https://portfolio-five-gray-76.vercel.app/",
       "source": "https://github.com/git-kumaraarav/portfoliov2",
-      "video": "WaagwYzOu5U",
+      "video": "Kc93BxuUC14",
       "description": [
         "Beautifully designed personal portfolio website built with Next.js, TailwindCSS, and TypeScript, showcasing my skills, projects, and experiences in a visually appealing manner."
+      ]
+    },
+        {
+      "name": "VaporMedia",
+      "oneliner": "Automated AI Tools",
+      "video": "Luq2LJw5uyU",
+      "link": "",
+      "source": "",
+      "technologies": ["Python", "GenAI", "Web Scraping"],
+      "description": [
+        "Co-developed core logic for an automated live GenAI news analyst and an automated messaging workflow platform for custom creator outreach."
+      ]
+    },
+    
+    {
+      "name": "Glance",
+      "oneliner": "Productivity Chrome Extension",
+      "technologies": ["JavaScript", "Chrome Extensions API"],
+      "link": "oaahBoYXiAk",
+      "source": "https://github.com/git-kumaraarav/Glance-chrome-extension",
+      "video": "oaahBoYXiAk",
+      "description": [
+        "Created a custom browser extension for managing daily tasks, tracking weather updates, and displaying motivational quotes directly in the browser."
       ]
     }, 
     {
@@ -115,29 +138,8 @@
       "description": [
         "Engineered decoupled, modular backend web services pairing fine-tuned text processing inputs alongside the Gemini API to compute instant credibility indexing."
       ]
-    },
-    {
-      "name": "VaporMedia",
-      "oneliner": "Automated AI Tools",
-      "video": "Luq2LJw5uyU",
-      "link": "",
-      "source": "",
-      "technologies": ["Python", "GenAI", "Web Scraping"],
-      "description": [
-        "Co-developed core logic for an automated live GenAI news analyst and an automated messaging workflow platform for custom creator outreach."
-      ]
-    },
-    {
-      "name": "Glance",
-      "oneliner": "Productivity Chrome Extension",
-      "technologies": ["JavaScript", "Chrome Extensions API"],
-      "link": "oaahBoYXiAk",
-      "source": "https://github.com/git-kumaraarav/Glance-chrome-extension",
-      "video": "oaahBoYXiAk",
-      "description": [
-        "Created a custom browser extension for managing daily tasks, tracking weather updates, and displaying motivational quotes directly in the browser."
-      ]
     }
+
   ],
   "skills": {
     "programmingLanguages": ["Python", "JavaScript", "C++", "Bash", "Java"],
