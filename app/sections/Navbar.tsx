@@ -1,13 +1,11 @@
 "use client"
-
-import { Button }  from "@/components/ui/button"
 import Image from 'next/image'
 import Link from 'next/link'
 import {cn} from '@/lib/utils'
 import { useEffect } from "react";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
-
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import {
   faBriefcase,
   faChartGantt,
@@ -16,6 +14,7 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
+import info from './Info.json'
 import React from "react";
 
 const Themes = [ "pickle", "ocean", "cassette", "matcha", "lemon", "arcade", "sunset", "mono", "indigo", "paper", "midnight" ]
@@ -32,18 +31,24 @@ function NavButton({ children, href}: { children?: React.ReactNode; href: string
 NavButton.logo = ({children} : {children?:React.ReactNode}) => {
   const [theme, setTheme] = React.useState(4);
   const [loaded, setLoaded] = React.useState(false);
+  const [hasClickedTheme, setHasClickedTheme] = React.useState(false);
+  const [showThemeTooltip, setShowThemeTooltip] = React.useState(false);
 
   const CycleTheme = () => {
+    setHasClickedTheme(true);
+    localStorage.setItem('theme-tooltip-dismissed', 'true');
     setTheme((theme) => (theme + 1) % Themes.length);
   }
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
     const savedThemeIndex = savedTheme === null ? NaN : Number.parseInt(savedTheme, 10);
+    const hasDismissedTooltip = localStorage.getItem('theme-tooltip-dismissed') === 'true';
 
     if (Number.isInteger(savedThemeIndex) && savedThemeIndex >= 0 && savedThemeIndex < Themes.length) {
       setTheme(savedThemeIndex);
     }
+    setHasClickedTheme(hasDismissedTooltip);
     setLoaded(true);
   }, []); 
 
@@ -53,6 +58,16 @@ NavButton.logo = ({children} : {children?:React.ReactNode}) => {
     document.documentElement.setAttribute('data-theme', Themes[theme]);
     localStorage.setItem('theme', theme.toString());
   }, [loaded, theme]);
+
+  useEffect(() => {
+    if (!loaded || hasClickedTheme) return;
+
+    const timer = window.setTimeout(() => {
+      setShowThemeTooltip(true);
+    }, 2000);
+
+    return () => window.clearTimeout(timer);
+  }, [loaded, hasClickedTheme]);
 
   const cats = [1, 2, 3, 4, 5]
   return <div className="flex flex-row items-center gap-1">
@@ -64,18 +79,18 @@ NavButton.logo = ({children} : {children?:React.ReactNode}) => {
           className="flex flex-row items-center gap-1 hover:cursor-pointer"
 
         >
-        <div className="w-10 h-10 flex item-center rounded-xl ring-1 ring-accent/50 hover:ring-accent/80 transition-all duration-300">
+        <div className="w-10 h-10 flex item-center rounded-xl ring-2  ring-accent/50 hover:ring-accent/80 transition-all duration-300">
 
-        <Tooltip>
+        <Tooltip open={showThemeTooltip && !hasClickedTheme}>
           <TooltipTrigger>
             <Image src={`/logos/cat${cats[theme % cats.length]}.svg`} alt="Aarav" width={50} height={50} className="rounded-[20%] hover:cursor-pointer " />
           </TooltipTrigger>
-          <TooltipContent>
-            <p className="text-sm bg-accent rounded p-2">Meeeeeooooowwww, colors? </p>
+          <TooltipContent className="bg-accent/90 text-accent-foreground transition-all duration-300">
+            <p className="text-sm text-fg/80">Meeeeoooowwww, Theme?</p>
           </TooltipContent>
         </Tooltip>
         </div>
-          <div className="hidden md:block">@kumaraarav</div>
+          <div className="hidden md:block">{info.basics.navbar_label}</div>
         </button>
       </div>  
 }

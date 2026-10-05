@@ -50,7 +50,7 @@ export default function Home() {
 
         {/* About and Experiences */}
         <SectionLayout className="flex flex-wrap md:flex md:mt-50">
-          <div id="#experiences" className=" gap-10 
+          <div id="experiences" className=" gap-10 
           flex flex-wrap lg:flex-nowrap lg:justify-center">
             <About className="max-w-2xl text-balance"/>
             <Experience className="flex flex-col bg-surface/30 rounded-xl p-8 backdrop-blur-lg border border-surface hover:scale-101 transition-all transition-300"/> 
