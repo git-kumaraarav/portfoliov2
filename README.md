@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kumar Aarav — Portfolio
 
-## Getting Started
+<p align="center">
+  <a href="https://portfolio-five-gray-76.vercel.app/">
+    <img src="./portfolio-thumbnail.png" alt="Preview of Kumar Aarav's portfolio" />
+  </a>
+</p>
 
-First, run the development server:
+<p align="center">
+  <a href="https://portfolio-five-gray-76.vercel.app/">View the live portfolio</a>
+  ·
+  <a href="https://github.com/git-kumaraarav/portfoliov2">View the source</a>
+  ·
+  <a href="./portfolio-trailer.mp4">Watch the portfolio trailer</a>
+</p>
+
+Personal portfolio website for **Kumar Aarav**, a software engineer and backend
+developer. The site presents professional experience, projects, skills,
+certifications, and contact links in a responsive, interactive interface.
+
+## Portfolio preview
+
+Click the thumbnail below to watch the portfolio trailer:
+
+[![Watch the portfolio trailer](./portfolio-thumbnail.png)](./portfolio-trailer.mp4)
+
+The trailer is also available directly as [`portfolio-trailer.mp4`](./portfolio-trailer.mp4).
+
+## Built with
+
+- [Next.js](https://nextjs.org/) 16
+- [React](https://react.dev/) 19
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Motion](https://motion.dev/)
+- [Vercel](https://vercel.com/) for deployment
+
+## Features
+
+- Responsive portfolio layout with animated sections
+- About, experience, skills, certifications, projects, and contact sections
+- Project cards with live demos, source repositories, and video previews
+- Social profile links and downloadable résumé
+- Custom visual effects, tooltips, and interactive components
+
+## Getting started
+
+### Prerequisites
+
+- Node.js 20 or newer
+- npm
+
+### Installation
+
+```bash
+git clone https://github.com/git-kumaraarav/portfoliov2.git
+cd portfoliov2
+npm install
+```
+
+### Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Production build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Project structure
 
-To learn more about Next.js, take a look at the following resources:
+```text
+app/
+├── components/       # Shared UI components
+├── sections/         # Portfolio sections and profile data
+├── globals.css       # Global styles
+├── layout.tsx        # Root layout and metadata
+└── page.tsx          # Portfolio page
+public/               # Images, certificates, and static assets
+portfolio-thumbnail.png
+portfolio-trailer.mp4
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Most portfolio content is maintained in
+[`app/sections/Info.json`](./app/sections/Info.json).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contact
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [LinkedIn](https://www.linkedin.com/in/kumaraarav/)
+- [GitHub](https://github.com/git-kumaraarav)
+- [X / Twitter](https://twitter.com/kumaraaravX)
+- [Instagram](https://www.instagram.com/ig.kumar.aarav/)
+- [Email](mailto:work.kumaraarav@gmail.com)
