@@ -1,3 +1,6 @@
+
+
+
 # Kumar Aarav — Portfolio
 
 <p align="center">
@@ -22,7 +25,7 @@ certifications, and contact links in a responsive, interactive interface.
 
 Click the thumbnail below to watch the portfolio trailer:
 
-[![Watch the portfolio trailer](./portfolio-thumbnail.png)](./portfolio-trailer.mp4)
+[![Watch the portfolio trailer](./portfolio-thumbnail.png)](https://github.com/user-attachments/assets/f145c2e2-e43c-40ab-9218-3ad957ddb51e)
 
 The trailer is also available directly as [`portfolio-trailer.mp4`](./portfolio-trailer.mp4).
 
